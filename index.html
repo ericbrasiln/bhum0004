@@ -25,7 +25,7 @@
 					<h2>Processos coloniais e a construção da modernidade</h2>
 					<p>Prof. <a href="http://ericbrasiln.github.io">Eric Brasil</a></p>
 					<a href="http://unilab.edu.br">
-						<img src="http://unilab.edu.br/wp-content/themes/unilabcores/images/logo-unilab.png" class="demo-logo">
+						<img src="images/logo-unilab.png">
 					</a>
 				</section>
 				<section>
@@ -43,6 +43,7 @@
 						</ul>
 					</section>
 					<section>
+						<h3>Colônia, colonização</h3>
 						<ul>
 							<li>conquistar + dominar + explorar + implementar cultura</li>
 							<li>Sistema colonial: conjunto específico de relações de dependência e controle político, econômico, social, cultural</li>
@@ -70,6 +71,7 @@
 						</ul>
 					</section>
 					<section>
+						<h4>Modernidade como conceito</h4>
 						<ul>
 							<li>Economia: capitalismo e liberalismo</li>
 							<li>Política: Eestado moderno centralizado com burocracia estatal (século XVI)
@@ -95,8 +97,17 @@
 					<section>
 						<h3>Cronologia das colonizações</h3>
 					</section>
-					<section id ="fragments" data-background-iframe="https://atlasescolar.ibge.gov.br/images/atlas/mapas_mundo/mundo_planisferio_politico_a3.pdf" data-background-interactive>
-						<h4 class="fragment fade-in-then-out">Mapa Mundi político</h4>
+					<section id ="fragments" data-background="https://upload.wikimedia.org/wikipedia/commons/c/cf/Worldmap_LandAndPolitical.jpg">
+						<h4 class="fragment fade-in-then-out"><a href="https://commons.wikimedia.org/wiki/File:Worldmap_LandAndPolitical.jpg">Mapa Mundi político</a></h4>
+					</section>
+					<section>
+						<h4>Tamanho real?</h4>
+						<p>A representação dos países e contientes no mapa mundi tradicional apresenta discrepâncias com a realidade.</p>
+						<p>O site <a href="https://thetruesize.com/">The True Size</a> nos ajuda a visualizá-las.</p>
+					</section>
+					<section id ="fragments" data-background-iframe="https://thetruesize.com/#?borders=1~!MTQwODI5MzI.NDUwMTQ3Ng*Mjc1OTY2NTA(Mzg0ODYwMw"
+					data-background-interactive>
+						<h4 class="fragment fade-in-then-out">The True Size</h4>
 					</section>
 				</section>
 				<section>
@@ -108,10 +119,14 @@
 						<li>Origens do "atraso" ou "sucesso" das colônias</li>
 					</ul>
 				</section>
+				<section data-transition="slide" data-background="#00019" data-background-transition="zoom">
+					<small> Criado a partir de <a href = 'https://revealjs.com/#/'>reveal.js</a></small>
+				</section>
 			</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
@@ -156,7 +171,7 @@
 				},
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealChalkboard ]
+				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealChalkboard ]
 			});
 		</script>
 	</body>
