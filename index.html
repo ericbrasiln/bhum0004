@@ -4,20 +4,110 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>BHUM0004 - Processos coloniais e a construção da modernidade</title>
+		<meta name="description" content="Disciplina do Bacharelado Inerdisciplinar em Humanidades do IHL-UNILAB">
+		<meta name="author" content="Eric Brasil">
+		<meta name="date" content="2020.1">
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>BHUM0004</h1>
+					<h2>Processos coloniais e a construção da modernidade</h2>
+					<p>Prof. <a href="http://ericbrasiln.github.io">Eric Brasil</a></p>
+					<a href="https://unilab.edu.br">
+						<img class="r-stretch" src="http://unilab.edu.br/wp-content/themes/unilabcores/images/logo-unilab.png" alt="unilab logo" align="center">
+					</a>
+				</section>
+				<section>
+					<h2>História dos conceitos: Modernidade, Colonialismo, Imperialismo e Neocolonialismo</h2>
+					<small>Aula síncrona 2: 20/01/2021</small>
+				</section>
+				<section>
+					<section>
+						<h3>Colônia, colonização</h3>
+						<ul>
+							<li>Significados gerais, senso comum</li>
+							<li>Categoria história: diferentes tempos, espaços e sociedades</li>
+							<li>Latim = <em>colo</em>: "eu moro, eu ocupo a terra, eu cultivo</li>
+							<li>Colônia: espaço que está sendo ocupado</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>conquistar + dominar + explorar + implementar cultura</li>
+							<li>Sistema colonial: conjunto específico de relações de dependência e controle político, econômico, social, cultural</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Modernidade</h3>
+						<ul>
+							<li>Significados gerais, senso comum</li>
+							<li>Latim = <em>modernus</em>: recentemente</li>
+							<li>Século XVI na Europa ocidental: percepção de viver num período novo (moderno) em contraposição ao passado medieval.</li>
+							<li>Mas o conceito histórico <strong>modernidade</strong> surge no Iluminismo.</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Modernidade como conceito</h4>
+						<ul>
+							<li>vinculado ao pensamento ocidental</li>
+							<li>Se refere a um processo de racionalização que atingiu as esferas
+								da economia, política e cultura a partir de ideais iluministas e
+								da consolidação do Estado Liberal Burguês a partir do século XVIII.
+							</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Economia: capitalismo e liberalismo</li>
+							<li>Política: Eestado moderno centralizado com burocracia estatal (século XVI)
+								e seu auge com o Estado Liberal Burguês nos séculos XVIII e XIX: contrato
+								e regras estabelecidas pelo conjunto de cidadãos (homens de posses)
+							</li>
+							<li>Cultura: separação da ciência, moral e artes do campo da religião</li>
+							<li>Ciência como caminho para a verdade racional contra o pensamento primitivo e supersticioso.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h3>Relação entre os conceitos</h3>						
+					<ul>
+						<li>Modernidade como arma imperialista;</li>
+						<li>Ocidentalização e dominação colonial;</li>
+						<li>"Civilização" e o "Fardo do homem branco"</li>
+						<li>Projeto universalista: ser moderno pressupõe ser branco, europeu e cristão?</li>
+						<li>Pós-colonial e pós-moderno?</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>Cronologia das colonizações</h3>
+					</section>
+					<section id ="fragments" data-background-iframe="https://atlasescolar.ibge.gov.br/images/atlas/mapas_mundo/mundo_planisferio_politico_a3.pdf" data-background-interactive>
+						<h4 class="fragment fade-in-then-out">Mapa Mundi político</h4>
+					</section>
+				</section>
+				<section>
+					<h3>Colônia de Povoamento X Colônia de Exploração</h3>
+					<p>um mito persistente.</p>
+					<ul>
+						<li>Ibéricos X Britânicos</li>
+						<li>Clima e Geografia</li>
+						<li>Origens do "atraso" ou "sucesso" das colônias</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
@@ -25,15 +115,48 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<script src="plugin/plugins/chalkboard/plugin.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				menu: {
+					side: 'left',
+				},
+				chalkboard: {
+					theme: "whiteboard",
+					boardmarkerWidth: 3,
+        			chalkWidth: 7,
+        			chalkEffect: 1.0,
+        			src: null,
+					readOnly: undefined,
+					toggleChalkboardButton: { left: "70px", bottom: "30px", top: "auto", right: "auto" },
+        			toggleNotesButton: { left: "100px", bottom: "30px", top: "auto", right: "auto" },
+					boardmarkers : [
+						{ color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+                		{ color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+                		{ color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+                		{ color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+                		{ color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+                		{ color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+						{ color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+					],
+					chalks: [
+						{ color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+                		{ color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+                		{ color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+                		{ color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+                		{ color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+                		{ color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+						{ color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+					],
+				},
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealChalkboard ]
 			});
 		</script>
 	</body>
