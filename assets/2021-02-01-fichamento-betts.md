@@ -6,7 +6,7 @@ course: bhum0004
 term: 2020.1
 ---
 
-<img src="images/logo-unilab.png" alt="logo-unilab" style="zoom:70%; align: center" />
+<img src="logo-unilab.png" alt="logo-unilab" style="zoom:70%; align: center" />
 
 # BHU**M0004 - Processos coloniais e a construção da modernidade**
 

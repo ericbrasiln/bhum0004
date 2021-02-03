@@ -4,7 +4,7 @@ author: "Eric Brasil"
 date: "2021-01-18"
 ---
 
-<img src="/home/ebn/Documentos/Github/bhum0004/images/logo-unilab.png" alt="logo-unilab" style="zoom:80%; align:center" />
+<img src="logo-unilab.png" alt="logo-unilab" style="zoom:80%; align:center" />
 
 # BHUM0004 - PROCESSOS COLONIAIS E A CONSTRUÇÃO DA MODERNIDADE
 
