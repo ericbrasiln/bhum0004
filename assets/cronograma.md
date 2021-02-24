@@ -80,21 +80,21 @@ Período: **<u>18/01/2021 - 26/01/2021</u>**
 | Carga Horária | 2h                                                           | 4h                            |
 | Tema          | [Formulário de apresentação](https://forms.gle/o1HD9QAq9jowhE8N6) | PAULO: Sentido da Colonização |
 
-| Tipo          | [Leitura1](#leitura-1) | Aula síncrona 2                                              |
+| Tipo          | [Leitura1](#leitura-1) | [Aula síncrona 2](https://ericbrasiln.github.io/bhum0004/#/2) |
 | ------------- | ------------- | ------------------------------------------------------------ |
 | Data          | s/d       | 20/01/2021                                                   |
 | Carga Horária | 4h        | 2h                                                           |
-| Tema          | Ver SIGAA | História dos conceitos: Modernidade, Colonialismo, Imperialismo e Neocolonialismo |
+| Tema          | Ver SIGAA | História dos conceitos: Modernidade, Colonialismo, Imperialismo e Neocolonialismo - [Gravação](https://youtu.be/FU7st0lOJ1I) |
 
 ### Módulo 2. Instituições e métodos de administração colonial – 12h
 
 Período: **<u>27/01/2021 - 09/21/2021</u>**
 
-| Tipo          | Tarefa Assíncrona 2 | [Leitura2](#leitura-2) | Aula síncrona 3                                  |
+| Tipo          | Tarefa Assíncrona 2 | [Leitura2](#leitura-2) | [Aula síncrona 3](https://ericbrasiln.github.io/bhum0004/#/7) |
 | ------------- | ------------------- | ------------- | ------------------------------------------------ |
 | Data          | 27/01/21            | s/d       | 03/02/2021                                       |
 | Carga Horária | 2h                  | 4h        | 2h                                               |
-| Tema          | [Vídeo de apoio](https://youtu.be/JJYmkvZDOd8) | Ver SIGAA | Instituições e métodos de administração colonial |
+| Tema          | [Vídeo de apoio](https://youtu.be/JJYmkvZDOd8) | Ver SIGAA | Instituições e métodos de administração colonial - [Gravação](https://youtu.be/gmMm1_N8UJg) |
 
 ***
 
@@ -110,28 +110,28 @@ Período: **<u>27/01/2021 - 09/21/2021</u>**
 
 Período: **<u>10/02/2021 - 209/03/2021</u>**
 
-| Tipo          | Tarefa Assíncrona 4                        | [Leitura3](#leitura-3) | Aula síncrona 4               |
+| Tipo          | Tarefa Assíncrona 4                        | [Leitura3](#leitura-3) | [Aula síncrona 4](https://ericbrasiln.github.io/bhum0004/#/12) |
 | ------------- | ------------------------------------------ | ------------- | ----------------------------- |
 | Data          | 10/02/221                                  | s/d       | 24/02/21                      |
 | Carga Horária | 2h                                         | 4h        | 1h30                          |
-| Tema          | O perigo de uma História Única [Ver SIGAA] | Ver SIGAA | Etnocentrismo e eurocentrismo |
+| Tema          | [O perigo de uma História Única](https://youtu.be/D9Ihs241zeg) | Ver SIGAA | Etnocentrismo e eurocentrismo - Gravação (em breve) |
 
-| Tipo          | Aula síncrona 5 |
+| Tipo          | Tarefa assíncrona 5 |
 | ------------- | --------------- |
 | Data          | 03/03/2021 |
 | Carga Horária | 1h30           |
-| Tema          | Violências simbólicas e materiais na formação das sociedades coloniais e na historiografia |
+| Tema          | Vídeo: [A razão africana de Muryatan Barbosa](https://youtu.be/CpYyboPVF5U) |
 
 ***
 
-### Módulo 4. Experiências anticoloniais – 12h
+### Módulo 4. Experiências anticoloniais – 11h
 
 Período: **<u>10/03/2021 - 23/03/2021</u>**
 
-| Tipo          | Aula síncrona 6                              | [Leitura4](#leitura-4) | Convidado - Matheus S. Pereira                              |
+| Tipo          | Aula síncrona 5                             | [Leitura4](#leitura-4) | Aula síncrona 6 - Convidado - Matheus S. Pereira           |
 | ------------- | -------------------------------------------- | ------------- | ------------------------------------------------------------ |
 | Data          | 10/03/2021                                   | s/d       | 17/03/2021                                                   |
-| Carga Horária | 2h                                           | 4h        | 2h                                                           |
+| Carga Horária | 1h                                        | 4h        | 2h                                                           |
 | Tema          | Estratégias de enfrentamento ao Colonialismo | Ver SIGAA | Resistências e negociações em Moçambique: história e historiografia |
 
 | Tipo          | Atividade 2            |
@@ -140,21 +140,21 @@ Período: **<u>10/03/2021 - 23/03/2021</u>**
 | Carga Horária | 4h                     |
 | Tema          | Ver SIGAA              |
 
-### Módulo 5.  Racismo, modernidade e independências – 15h
+### Módulo 5.  Racismo, modernidade e independências – 16h
 
 Período: **<u>24/03/2021 - 14/04/2021</u>**
 
-| Tipo          | Convidada - [Bethânia Pereira](http://lattes.cnpq.br/0860853837341761) | Aula síncrona 8                         | [Leitura5](#leitura-5) |
+| Tipo          | Aula síncrona 7 - Convidada - [Bethânia Pereira](http://lattes.cnpq.br/0860853837341761) | Aula síncrona 8                         | [Leitura5](#leitura-5) |
 | ------------- | ------------------------------------------ | --------------------------------------- | ------------- |
 | Data          | 24/03/21                                   | 31/03/21                                | s/d       |
-| Carga Horária | 2h                                     | 1h30                                    | 4h        |
-| Tema          | Raça, modernidade e cidadania nas Américas - o caso do Haiti | Imperialismo e modernidade no século XX | Ver SIGAA |
+| Carga Horária | 2h                                     | 1h                                    | 4h        |
+| Tema          | Raça, modernidade e cidadania nas Américas - o caso do Haiti | Imperialismo e modernidade e trabalho no século XX | Ver SIGAA |
 
-| Tipo          | Convidado - Alexandre Reis                     | Atividade 3        |
-| ------------- | ---------------------------------------------- | ------------------ |
-| Data          | 07/04/2021                                     | Entrega 14/04/2021 |
-| Carga Horária | 2h                                             | 6h                 |
-| Tema          | Processos de independência e projetos de nação | Ver SIGAA          |
+| Tipo          | Aula Síncrona 9 - Convidado - Alexandre Reis   | Aula síncrona 10 | Atividade 3        |
+| ------------- | ---------------------------------------------- | ---------------- | ------------------ |
+| Data          | 07/04/2021                                     | 14/04/2021       | Entrega 14/04/2021 |
+| Carga Horária | 2h                                             | 1h               | 6h                 |
+| Tema          | Processos de independência e projetos de nação | Encerramento     | Ver SIGAA          |
 
 [Voltar ao índice](#índice)
 
@@ -179,13 +179,13 @@ Período: **<u>24/03/2021 - 14/04/2021</u>**
 
 ### Leitura 4
 
-1. JAMES, C. L. R. Preâmbulo; Prefácio à primeira edição; Prólogo; As massas de São Domingos começam. In: **Os jacobinos negros:** Toussaint L’Ouverture e a revolução de São Domingos. São Paulo: Boitempo, 2000, p. 91-119.
-2. ISAACMAN, Allen e VANSINA, Jan. Iniciativas e resistência africanas na África central, 1880-1914. In: BOAHEN, A. Adu (Org.). **África sob dominação colonial, 1880-1935.** 2. ed. rev. Brasília: UNESCO, 2010. (História Geral da África, VII)
+1. REIS, João e SILVA, Eduardo. Capítulo 4. In: **Negociação e Conflito**. Resistência negra no Brasil escravista. São Paulo: Companhia das Letras, 1989.
+2. PRICE, Richard. Introducción. In: **Sociedades Cimarronas**: Comunidades esclavas rebeldes en las Américas. México: Siglo Veintuno, 1981
+3. ISAACMAN, Allen e VANSINA, Jan. Iniciativas e resistência africanas na África central, 1880-1914. In: BOAHEN, A. Adu (Org.). África sob dominação colonial, 1880-1935. 2. ed. rev. Brasília: UNESCO, 2010. (História Geral da África, VII)
 
 ### Leitura 5
 
-1. MATA, Iacy Maia. Política, Raça e Repressão em Santiago de Cuba após a lei de Emancipação (1880). In: *XXVII Simpósio Nacional de História*, 2013, Natal. Anais do XXVII Simpósio Nacional de História: Conhecimento histórico e diálogo social. São Paulo: Anpuh, 2013.
-2. BRASIL, Eric. “Carnaval como direito: a Revolta Canboulay de 1881, em Port-of-Spain, Trinidad”. *Revista Eletrônica da ANPHLAC*, ISSN 1679-1061, Nº. 20, p. 48-77, Jan/Jun., 2016.
+1. FICK, Carolyn. Para uma (re)definição de liberdade: a Revolução no Haiti e os paradigmas de Liberdade e Igualdade. *Estudos Afro-Asiáticos*, v.26, n.2, Mai-Agosto, 2004.
 3. COOPER, Frederick. Condições Análogas à escravidão: imperialismo e ideologia da mão-de-obra livre na África. In: COOPER, Frederick; SCOTT, Rebecca J.; HOLT, Thomas C. **Além da escravidão**: investigações sobre raça, trabalho e cidadania em sociedades pós-emancipação. Rio de Janeiro: Civilização Brasileira, 2005.
 
 

@@ -164,96 +164,108 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 .md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
 
 
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url('file:////home/ebn/.var/app/io.typora.Typora/config/Typora/themes/vue/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@import '';
+@import '';
+
+/*by H16nning*/
 
 :root {
-    --side-bar-bg-color: #fff;
-    --control-text-color: #777;
-    --font-sans-serif: 'Ubuntu', 'Source Sans Pro', sans-serif !important;
-    --font-monospace: 'Fira Code', 'Roboto Mono', monospace !important;
+  --bg-color: white;
+  --side-bar-bg-color: #f5f7f9;
+  --control-text-color: #3b454e;
+  --primary-color: rgb(26, 168, 139);
+  --primary-btn-border-color: rgb(26, 168, 139);
+  --active-file-bg-color: #e6ecf1;
+  --active-file-text-color: inherit;
+  --active-file-border-color: rgb(26, 168, 139);
+  --item-hover-text-color: #242a31;
+  --item-hover-bg-color: #f5f7f9;
+  --window-border: 1px solid #e6ecf1;
+  --select-text-font-color: white;
+  --select-text-bg-color: rgb(50, 119, 229);
+
+  --md-char-color: #9daab6;
+  --heading-char-color: #9daab6;
+  --meta-content-color: rgb(26, 168, 139);
+
+  --borders: #e6ecf1;
+  --table-border-color: #e6ecf1;
+  --boxes: #f5f7f9;
+  --boxes-darker: #d8e0e7;
+  --boxes-darker2: #bac2c9;
+  --boxes-darkest: #9daab6;
+  --drag-placeholder-color: #d8e0e7;
+
+  --mds: #183055;
+  --text-color: #3b454e;
+  --heading-text-color: #242a31;
+  --light-text-color: #9daab6;
+  --light-text-color-darker: #74818d;
+  --codeboxes: #183055;
+  --rawblock-edit-panel-bd: transparent;
+
+  --primary-color-white: rgb(106, 228, 203);
+  --primary-color-white-darker: rgb(67, 196, 170);
+  --primary-color-darker: rgb(12, 131, 107);
+  --focus-ring-color: rgb(26, 168, 139);
+
+  --danger-color: rgb(255, 70, 66);
+
+  --node-fill: #ececff;
+  --node-border: #ccccff;
+  --cluster-fill: #ffffde;
+  --cluster-border: #aaaa33;
+  --note-fill: #fff5ad;
+  --note-border: #aaaa33;
+
+  /*****************************/
+
+  --font-family: 'Roboto', sans-serif;
+  --code-font-family: 'Source Code Pro';
+  --monospace: 'Source Code Pro';
 }
 
-html {
-    font-size: 16px;
+html,
+.form-control,
+.modal {
+  font-size: 16px;
 }
 
 body {
-    font-family: var(--font-sans-serif);
-    color: #34495e;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.6rem;
-    letter-spacing: 0;
-    margin: 0;
-    overflow-x: hidden;
+  background: var(--bg-color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: #3b454e;
+  line-height: 1.625rem;
+  height: 100%;
 }
 
 #write {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 20px 30px 100px;
-}
-
-#write p {
-    line-height: 1.6rem;
-    word-spacing: .05rem;
-}
-
-#write ol li {
-    padding-left: 0.5rem;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 100px;
+  position: static;
+  width: 100%;
 }
 
 #write > ul:first-child,
 #write > ol:first-child {
-    margin-top: 30px;
-}
-
-body > *:first-child {
-    margin-top: 0 !important;
-}
-
-body > *:last-child {
-    margin-bottom: 0 !important;
+  margin-top: 30px;
 }
 
 a {
-    color: #42b983;
-    font-weight: 600;
-    padding: 0 2px;
-    text-decoration: none;
+  color: var(--primary-color);
+  text-decoration: none !important;
+  transition-duration: 0.2s;
+  transition-property: color;
+}
+
+a:hover {
+  color: var(--primary-color-darker);
+}
+
+.ty-preferences a {
+  color: var(--primary-color);
 }
 
 h1,
@@ -262,12 +274,9 @@ h3,
 h4,
 h5,
 h6 {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
+  position: relative;
+  color: var(--heading-text-color);
+  cursor: text;
 }
 
 h1:hover a.anchor,
@@ -276,412 +285,2072 @@ h3:hover a.anchor,
 h4:hover a.anchor,
 h5:hover a.anchor,
 h6:hover a.anchor {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 tt,
 h1 code {
-    font-size: inherit !important;
+  font-size: inherit;
 }
 
 h2 tt,
 h2 code {
-    font-size: inherit !important;
+  font-size: inherit;
 }
 
 h3 tt,
 h3 code {
-    font-size: inherit !important;
+  font-size: inherit;
 }
 
 h4 tt,
 h4 code {
-    font-size: inherit !important;
+  font-size: inherit;
 }
 
 h5 tt,
 h5 code {
-    font-size: inherit !important;
+  font-size: inherit;
 }
 
 h6 tt,
 h6 code {
-    font-size: inherit !important;
-}
-
-h2 a,
-h3 a {
-    color: #34495e;
+  font-size: inherit;
 }
 
 h1 {
-    padding-bottom: .4rem;
-    font-size: 2.2rem;
-    line-height: 1.3;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: solid 2px var(--borders);
 }
 
 h2 {
-    font-size: 1.75rem;
-    line-height: 1.225;
-    margin: 35px 0 15px;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #ddd;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
-    font-size: 1.4rem;
-    line-height: 1.43;
-    margin: 20px 0 7px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 h4 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
 }
 
 h5 {
-    font-size: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h6 {
-    font-size: 1rem;
-    color: #777;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+#write > h1.md-focus:before,
+#write > h2.md-focus:before,
+#write > h3.md-focus:before,
+#write > h4.md-focus:before,
+#write > h5.md-focus:before,
+#write > h6.md-focus:before {
+  color: var(--light-text-color);
+  border: none;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0px;
+  line-height: 1;
+}
+
+#write > h1.md-focus:before {
+  content: 'h1';
+  top: 1.25rem;
+  left: -1.75rem;
+}
+
+#write > h2.md-focus:before {
+  content: 'h2';
+  top: 0.8rem;
+  left: -1.75rem;
+}
+
+#write > h3.md-focus:before {
+  content: 'h3';
+  top: 0.55rem;
+  left: -1.75rem;
+}
+
+#write > h4.md-focus:before {
+  content: 'h4';
+  top: 0.35rem;
+  left: -1.75rem;
+}
+
+#write > h5.md-focus:before {
+  content: 'h5';
+  top: 0.2rem;
+  left: -1.75rem;
+}
+
+#write > h6.md-focus:before {
+  content: 'h6';
+  top: 0.2rem;
+  left: -1.75rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6 {
+  margin-top: 0rem;
 }
 
 p,
 blockquote,
 ul,
 ol,
-dl,
-table {
-    margin: 0.8em 0;
+dl {
+  margin: 0.5rem 0rem 1.5rem 0rem;
 }
 
 li > ol,
 li > ul {
-    margin: 0 0;
+  margin: 0 0;
 }
 
 hr {
-    height: 2px;
-    padding: 0;
-    margin: 16px 0;
-    background-color: #e7e7e7;
-    border: 0 none;
-    overflow: hidden;
-    box-sizing: content-box;
-}
-
-body > h2:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-body > h1:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-body > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-body > h3:first-child,
-body > h4:first-child,
-body > h5:first-child,
-body > h6:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-a:first-child h1,
-a:first-child h2,
-a:first-child h3,
-a:first-child h4,
-a:first-child h5,
-a:first-child h6 {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-h1 p,
-h2 p,
-h3 p,
-h4 p,
-h5 p,
-h6 p {
-    margin-top: 0;
+  height: 2px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: var(--borders);
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
 }
 
 li p.first {
-    display: inline-block;
+  display: inline-block;
 }
 
 ul,
 ol {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 ul:first-child,
 ol:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 ul:last-child,
 ol:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
+
+.md-blockmeta {
+  color: var(--md-char-color);
+}
+
+mark {
+  background-color: hsla(168, 80%, 47%, 0.2);
+  color: var(--text-color);
+}
+
+/*BLOCKQUOTE*/
 
 blockquote {
-    border-left: 4px solid #42b983;
-    padding: 10px 15px;
-    color: #777;
-    background-color: rgba(66, 185, 131, .1);
+  width: 100%;
+  background-color: var(--boxes);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0.3rem;
+  padding: 1rem;
 }
 
+blockquote blockquote {
+  padding-right: 0;
+}
+
+/*TABLE*/
+
 table {
-    padding: 0;
-    word-break: initial;
+  font-size: 0.875rem;
+  padding: 0;
+  margin: 1.5rem 0;
+  word-break: initial;
 }
 
 table tr {
-    border-top: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 0;
+  border-top: 1px solid var(--borders);
+  border-bottom: 1px solid var(--borders);
+  margin: 0;
+  padding: 0;
 }
 
-table tr:nth-child(2n),
-thead {
-    background-color: #fafafa;
+table tr.md-end-block {
+  border-top: none;
 }
 
 table tr th {
-    font-weight: bold;
-    border: 1px solid #dfe2e5;
-    border-bottom: 0;
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
+  font-weight: bold;
+  border: none;
+  border-bottom: solid 2px var(--borders);
+  margin: 0;
+  padding: 10px 16px;
+  transition-duration: 0.3s;
+  transition-property: background-color;
 }
 
 table tr td {
-    border: 1px solid #dfe2e5;
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
+  border: none;
+  margin: 0;
+  padding: 10px 16px;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+
+#write table tr td:hover,
+#write table tr th:hover {
+  background-color: var(--boxes);
 }
 
 table tr th:first-child,
 table tr td:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 table tr th:last-child,
 table tr td:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-#write strong {
-    padding: 0 1px;
+/*OTHER TABLE THINGS*/
+
+.ty-table-edit {
+  padding: 0.3rem;
+  border: solid 1px var(--borders);
+  border-radius: 0.3rem;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+  transition-duration: 0.3s;
+  transition-property: opacity;
 }
 
-#write em {
-    padding: 0 5px 0 2px;
+.ty-table-edit:active,
+.ty-table-edit:focus,
+.popover:active,
+.popover:focus {
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
 }
 
-#write table thead th {
-    background-color: #f2f2f2;
+.popover {
+  border: solid 1px var(--borders);
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+  border-radius: 0.3rem;
 }
 
-#write .CodeMirror-gutters {
-    border-right: none;
+.popover .arrow {
+  border-bottom-color: var(--borders);
 }
 
-#write .md-fences {
-    border: 1px solid #F4F4F4;
-    -webkit-font-smoothing: initial;
-    margin: 0.8rem 0 !important;
-    padding: 0.3rem 0 !important;
-    line-height: 1.43rem;
-    background-color: #F8F8F8 !important;
-    border-radius: 2px;
-    font-family: var(--font-monospace);
-    font-size: 0.85rem;
-    word-wrap: normal;
+.md-grid-board .md-grid-ext {
+  background-color: var(--boxes);
 }
 
-#write .CodeMirror-wrap .CodeMirror-code pre {
-    padding-left: 12px;
+.md-grid-board tr[row='1'] .md-grid-ext {
+  background-color: var(--boxes-darkest);
 }
 
-#write code, tt {
-    padding: 2px 4px;
-    border-radius: 2px;
-    font-family: var(--font-monospace);
-    font-size: 0.92rem;
-    color: #e96900;
-    background-color: #f8f8f8;
+.md-grid-board a.md-active,
+.md-grid-board a:hover {
+  background-color: var(--primary-color-white);
+  border-color: var(--primary-color-white-darker);
 }
 
+#md-grid-width,
+#md-grid-height {
+  border-radius: 0.3rem;
+  border-color: var(--borders);
+}
+
+#md-grid-width,
+#md-grid-height {
+  border-radius: 0.3rem;
+  border-color: var(--borders);
+  transition-duration: 0.3s;
+  transition-property: border-color;
+}
+
+#md-grid-width:focus,
+#md-grid-height:focus {
+  border-radius: 0.3rem;
+  border-color: var(--primary-color);
+}
+
+/*CODE*/
+
+.CodeMirror {
+  padding: 1rem;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.cm-s-inner .CodeMirror-gutters {
+  background-color: none;
+  border-right: none;
+  border-radius: 0px;
+  width: 2rem;
+  color: white;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.cm-s-inner .CodeMirror-gutter-wrapper {
+  left: -2.75rem !important;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+  border-left: solid 2px var(--light-text-color-darker);
+}
+
+.CodeMirror.cm-s-typora-default .CodeMirror-activeline-background {
+  background-color: var(--boxes);
+}
+
+.cm-s-inner .CodeMirror-cursor {
+  color: black;
+  border-left: solid 1px black;
+}
+
+.cm-s-inner .CodeMirror-linenumber {
+  color: var(--bg-color);
+  opacity: 0.6;
+  width: 1.9532rem !important /*required*/;
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-inner span.cm-comment {
+  color: #9daab6;
+}
+
+.cm-s-inner span.cm-string,
+.cm-s-inner span.cm-string-2 {
+  color: #71a7ff;
+}
+
+.cm-s-inner span.cm-number {
+  color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-variable,
+.cm-s-inner span.cm-variable-2 {
+  color: white;
+}
+
+.cm-s-inner span.cm-def {
+  color: white;
+}
+
+.cm-s-inner span.cm-operator {
+  color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-keyword {
+  color: #61e3a5;
+}
+
+.cm-s-inner span.cm-atom {
+  color: #bd93f9;
+}
+
+.cm-s-inner span.cm-meta {
+  color: #f8f8f2;
+}
+
+.cm-s-inner span.cm-link {
+  color: var(--primary-color);
+}
+
+.cm-s-inner span.cm-tag,
+.cm-s-inner .cm-header {
+  color: #b4f6d6;
+}
+
+.cm-s-inner span.cm-attribute {
+  color: #ff9d3d;
+}
+
+.cm-s-inner span.cm-qualifier,
+.cm-s-inner span.cm-type,
+.cm-s-inner span.cm-variable-3 {
+  color: #82ee9d;
+}
+
+.cm-s-inner span.cm-property {
+  color: #ffd6ad;
+}
+
+.cm-s-inner span.cm-builtin {
+  color: #8ffaaa;
+}
+
+.md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
+  background: none;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-typora-default .cm-header,
+.cm-s-typora-default .cm-property {
+  color: var(--primary-color);
+}
+
+#typora-source span.cm-variable {
+  color: var(--window-border);
+}
+
+#typora-source span.cm-def {
+  color: var(--text-color);
+}
+
+#write .code-tooltip {
+  box-shadow: rgba(116, 129, 141, 0.08) 0px 2px 6px 0px;
+  border: solid 1px var(--borders);
+  border-radius: 0.3rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 15rem;
+  height: 2.5rem;
+  bottom: -3rem;
+  padding: 0.1875rem;
+}
+
+#write .code-tooltip .ty-input {
+  border: solid 1px var(--borders);
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0rem;
+  padding-left: 0.5rem !important;
+  text-align: left;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  transition-duration: 0.3s;
+  transition-property: border;
+}
+
+#write .code-tooltip .ty-input:focus {
+  border-color: var(--primary-color);
+}
+
+.html-for-mac .ty-cm-lang-input:empty:after {
+  left: 0.5rem;
+}
+
+.autoComplt-list li,
+.fences-auto-suggest li {
+  font-weight: 500;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+}
+
+.autoComplt-list li.active,
+.fences-auto-suggest li:hover {
+  background-color: var(--boxes);
+  color: var(--primary-color);
+}
+
+.md-fences,
 tt {
-    margin: 0 2px;
+  border-radius: 0.3rem;
+  color: #ffffff;
+  padding: 1.5rem;
+  font-size: 0.8rem;
 }
 
-#write .md-footnote {
-    background-color: #f8f8f8;
-    color: #e96900;
+code {
+  padding: 0.25rem 0.5rem;
+  background-color: var(--borders);
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
 }
 
-/* heighlight. */
-#write mark {
-    background-color: #EBFFEB;
-    border-radius: 2px;
-    padding: 2px 4px;
-    margin: 0 2px;
-    color: #222;
-    font-weight: 500;
-}
-
-#write del {
-    padding: 1px 2px;
-}
-
-.cm-s-inner .cm-link,
-.cm-s-inner.cm-link {
-    color: #22a2c9;
-}
-
-.cm-s-inner .cm-string {
-    color: #22a2c9;
-}
-
-.md-task-list-item > input {
-    margin-left: -1.3em;
-}
-
-@media print {
-    html {
-        font-size: 13px;
-    }
-
-    table,
-    pre {
-        page-break-inside: avoid;
-    }
-
-    pre {
-        word-wrap: break-word;
-    }
+.md-fences .CodeMirror div.CodeMirror-cursor {
+  border-left: solid 1px white;
 }
 
 .md-fences {
-    background-color: #f8f8f8;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  background-color: var(--mds);
 }
 
+/*DIAGRAMS*/
+
 .md-diagram-panel {
-    position: static !important;
+  color: var(--text-color);
+  border: solid 1px var(--borders);
+  border-radius: 0.3rem;
+}
+
+.md-diagram-panel text,
+.md-diagram-panel .label {
+  color: var(--text-color);
+}
+
+.md-diagram-panel text {
+  fill: var(--text-color) !important /*required*/;
+}
+
+.md-diagram-panel-error {
+  color: var(--danger-color);
+}
+
+/*CHECKBOXES*/
+
+.md-task-list-item > input:before,
+input[type='checkbox']:before {
+  border-radius: 0.2rem;
+  margin-top: -0.08rem;
+  margin-left: -0.1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--borders);
+  content: ' ';
+  display: block;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+
+.md-task-list-item:hover > input:before,
+input[type='checkbox']:hover:before {
+  background-color: var(--boxes-darker);
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before,
+input[type='checkbox']:checked:before {
+  background-color: var(--primary-color);
+}
+
+.md-task-list-item:hover > input:checked:before,
+.md-task-list-item:hover > input[checked]:before,
+input[type='checkbox']:hover:checked:before {
+  background-color: var(--primary-color-darker);
+}
+
+.md-task-list-item > input:after,
+.md-task-list-item > input:after,
+input[type='checkbox']:after {
+  transform: rotate(-45deg);
+  position: absolute;
+  border: 2px solid white;
+  border-top: 0;
+  border-right: 0;
+  top: 0.16rem;
+  left: 0.1rem;
+  width: 0.6rem;
+  height: 0.375rem;
+  content: ' ';
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+
+.md-task-list-item > input:checked:after,
+.md-task-list-item > input[checked]:after,
+input[type='checkbox']:checked:after {
+  opacity: 1;
+}
+
+.ty-preferences input[type='checkbox']:before {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.ty-preferences input[type='checkbox']:after {
+  width: 0.5rem;
+  height: 0.32rem;
+  top: 0.19rem;
+  left: 0.14rem;
+}
+
+@media print {
+  html {
+    font-size: 13px;
+  }
+
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    word-wrap: break-word;
+  }
 }
 
 #write pre.md-meta-block {
-    padding: 1rem;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #f7f7f7;
-    border: 0;
-    border-radius: 3px;
-    color: #777777;
-    margin-top: 0 !important;
-}
-
-.mathjax-block > .code-tooltip {
-    bottom: .375rem;
-}
-
-#write > h3.md-focus:before {
-    left: -1.5625rem;
-    top: .375rem;
-}
-
-#write > h4.md-focus:before {
-    left: -1.5625rem;
-    top: .285714286rem;
-}
-
-#write > h5.md-focus:before {
-    left: -1.5625rem;
-    top: .285714286rem;
-}
-
-#write > h6.md-focus:before {
-    left: -1.5625rem;
-    top: .285714286rem;
+  padding: 1rem;
+  line-height: 1.45;
+  background-color: var(--boxes);
+  border: 0;
+  border-radius: 0.3rem;
+  color: var(--text-color);
+  border-left: solid 4px var(--boxes-darkest);
 }
 
 .md-image > .md-meta {
-    border-radius: 3px;
-    font-family: var(--font-monospace);
-    padding: 2px 0 0 4px;
-    font-size: 0.9em;
-    color: inherit;
+  border-radius: 3px;
+  padding: 2px 0px 0px 4px;
+  font-size: 0.9em;
+  color: inherit;
 }
 
 .md-tag {
-    color: inherit;
+  color: var(--md-char-color);
+  opacity: 1;
 }
+
+/*TOC*/
 
 .md-toc {
-    margin-top: 20px;
-    padding-bottom: 20px;
+  margin: 1.5rem 0rem;
 }
 
-.sidebar-tabs {
-    border-bottom: none;
+.md-toc:focus .md-toc-content {
+  border: none;
+}
+
+.md-toc-tooltip .btn {
+  padding: 0.5rem;
+  line-height: 1rem;
+}
+
+.md-toc-tooltip .btn:hover {
+  color: var(--primary-color) !important /*required*/;
+  background-color: var(--boxes) !important /*required*/;
+}
+
+/*MATH*/
+
+.MathJax_SVG:focus {
+  outline: none;
+}
+
+.md-rawblock {
+  margin: 1.5rem 0rem;
+}
+
+.md-rawblock-container {
+  transition-duration: 0.3s;
+  transition-property: box-shadow, border;
+  padding: 8px;
+  border: solid 1px transparent;
+  border-radius: 0.3rem;
+}
+
+.md-rawblock:hover > .md-rawblock-container {
+  background-color: transparent;
+  border: solid 1px var(--borders);
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+}
+
+.md-math-block .md-rawblock-control:not(.md-rawblock-tooltip) {
+  background-color: var(--bg-color);
+  border-left: solid 2px var(--primary-color);
+  border-right: solid 2px var(--primary-color);
+}
+
+.md-math-block .md-rawblock-before {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  border-top: solid 2px var(--primary-color);
+}
+
+.md-math-block .md-rawblock-after {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  border-bottom: solid 2px var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+#write .md-math-block .code-tooltip {
+  width: 100%;
+}
+
+.md-mathblock-input span.cm-tag {
+  color: #15726d;
+}
+
+.md-mathblock-input span.cm-atom {
+  color: #8a1fa0;
+}
+
+.md-mathblock-input span.cm-number {
+  color: #df4617;
+}
+
+/*HTML*/
+
+.md-htmlblock-panel {
+  border: solid 2px var(--primary-color);
+  border-radius: 0.3rem;
+}
+
+/*FOOTER*/
+
+footer.ty-footer {
+  border: none;
+}
+
+.footer-item {
+  opacity: 1 !important;
+  color: var(--light-text-color);
+  transition: 0.3s;
+}
+
+.footer-item:hover {
+  color: var(--light-text-color-darker) !important;
+}
+
+#outline-btn:hover {
+  color: var(--light-text-color-darker) !important;
+}
+
+/*SIDEBAR*/
+
+#typora-sidebar {
+  border-right: solid 1px var(--borders);
+}
+
+.info-panel-tab {
+  opacity: 1;
+}
+
+.info-panel-tab-border {
+  color: var(--primary-color);
+  border-radius: 2px;
+}
+
+#ty-sidebar-search-back-btn {
+  margin: auto;
+}
+
+.ty-show-outline-filter #file-library-search,
+.ty-show-search #file-library-search {
+  height: 4rem;
+}
+
+#file-library-search-input {
+  height: 2rem;
+}
+
+#file-library-search-panel input {
+  margin-top: 8px !important;
+}
+
+.ty-sidebar-search-panel .searchpanel-search-option-btn {
+  top: 14px;
+}
+
+#typora-sidebar #filesearch-case-ion-btn,
+#typora-sidebar #filesearch-word-ion-btn {
+  background: none;
+  margin-top: 0.45rem;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+#typora-sidebar #filesearch-case-ion-btn:hover,
+#typora-sidebar #filesearch-word-ion-btn:hover {
+  color: var(--primary-color);
+}
+
+/*sidebar outline*/
+
+#close-outline-filter-btn {
+  top: 15px;
+  opacity: 1;
+  color: var(--light-text-color) !important;
+}
+
+#close-outline-filter-btn:hover {
+  color: var(--primary-color) !important;
+  background-color: transparent !important;
+}
+
+#close-outline-filter-btn:active {
+  background-color: transparent !important;
+}
+
+#outline-content {
+  padding-right: 0px;
+  line-height: 1rem;
+}
+
+.outline-item {
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.outline-item .outline-label {
+  display: block;
+  width: 100%;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-right: solid 2px transparent;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--light-text-color-darker);
+  transition-duration: 0.3s;
+  transition-property: color;
+}
+
+.outline-item:hover {
+  background: none;
+}
+
+.outline-item:hover .outline-label {
+  color: var(--primary-color);
+}
+
+.outline-label:hover {
+  text-decoration: none;
+}
+
+.outline-active.outline-label {
+  border-right: solid 2px var(--primary-color);
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.outline-expander {
+  padding-top: 0.4rem;
+  padding-right: 0.5rem;
+}
+
+/*sidebar file-list and search results*/
+
+#file-library-list[data-state='complete'] #sidebar-loading-template {
+  padding: 0rem;
+}
+
+#typora-sidebar .file-list-item,
+.ty-search-item {
+  border: none;
+  transition-duration: 0.3s !important;
+  transition-property: background-color, border, color, height !important;
+  padding: 1rem;
+}
+
+#typora-sidebar .file-list-item:hover,
+.ty-search-item:hover {
+  background: var(--borders);
+}
+
+#typora-sidebar .ty-search-item-line:hover,
+#typora-sidebar .ty-search-item-line.active {
+  background-color: transparent;
+}
+
+#typora-sidebar .ty-search-item-line.active {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+#typora-sidebar .file-list-item-file-name {
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 0rem;
+  line-height: 1.8rem;
+  float: right;
+}
+
+#typora-sidebar .file-list-item-file-ext-part {
+  font-weight: 800;
+  opacity: 0.5;
+}
+
+#typora-sidebar .file-list-item-parent-loc,
+#typora-sidebar .file-list-item-time {
+  font-weight: 400;
+  opacity: 0.5;
+  display: block;
+}
+
+#typora-sidebar .file-list-item-summary {
+  float: left;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+#typora-sidebar input.file-list-item-file-name {
+  margin: 0.5rem 0rem 0.5rem 0.7rem;
+  padding: 0.4rem !important;
+  line-height: 1rem;
+  float: right;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  background-color: white !important;
+}
+
+#typora-sidebar .file-list-item.file-library-file-node {
+  border: none;
+}
+
+#typora-sidebar .file-tree-node.active .file-node-background,
+#typora-sidebar .file-list-item.active,
+#typora-sidebar .ty-search-item.active {
+  background-color: white;
+  outline: 1px solid var(--borders);
+  border: none;
+  color: var(--primary-color) !important;
+}
+
+#typora-sidebar .file-tree-node.active .file-node-content {
+  color: var(--primary-color) !important;
+}
+
+#typora-sidebar .file-tree-node {
+  padding: 0rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+}
+
+#typora-sidebar .file-tree-node .file-node-content {
+  padding: 0rem;
+  line-height: 2.2rem;
+  height: 2.2rem;
+  background: none;
+}
+
+#typora-sidebar .file-tree-node .file-node-background {
+  padding: 0rem;
+  height: 2.2rem;
+}
+
+#typora-sidebar .file-tree-node .file-node-icon {
+  margin-right: 0.5rem;
+}
+
+#typora-sidebar .file-tree-node .file-node-icon.fa-file-text-o {
+  margin-top: 0.33rem;
+}
+
+#typora-sidebar .file-tree-node .file-node-icon.fa-folder {
+  margin-top: 0.36rem;
+}
+
+#typora-sidebar .file-tree-node .fa-caret-down,
+#typora-sidebar .file-tree-node .fa-caret-right {
+  position: relative;
+  top: 5px;
+}
+
+#typora-sidebar .file-tree-node .file-tree-rename-input {
+  height: 2.2rem;
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0rem;
+  padding-left: 0rem;
+}
+
+#typora-sidebar .ty-search-item-collapse-icon {
+  top: 9px;
+}
+
+/*no left border*/
+#typora-sidebar .file-tree-node.active > .file-node-background {
+  border: none;
+}
+
+/*no dotted highlighting*/
+.file-library-node:not(.file-node-root):focus > .file-node-content {
+  outline: none;
+}
+
+#typora-sidebar #sidebar-files-menu {
+  border: solid 1px var(--borders);
+  border-radius: 0.3rem;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+}
+
+#typora-sidebar #ty-sidebar-footer {
+  background-color: var(--bg-color);
+  border-top: solid 1px var(--borders);
+  font-weight: 500;
+}
+
+#typora-sidebar #ty-sidebar-footer li {
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+}
+
+#typora-sidebar #ty-sidebar-footer li:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
+}
+
+/*cursor*/
+.file-node-content:hover {
+  cursor: pointer;
+}
+
+.file-tree-node:not(.file-node-root):not(.file-node-expanded) .file-node-background {
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.file-tree-node:not(.file-node-root):not(.file-node-expanded):hover .file-node-background {
+  background-color: var(--borders);
+}
+
+#typora-sidebar .sidebar-footer-item {
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+  font-weight: 700;
+}
+
+#typora-sidebar .sidebar-footer-item:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
 }
 
 #typora-quick-open {
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
+  background-color: white;
+  border: 1px solid var(--borders);
+  border-radius: 0.3rem;
+  padding: 0rem;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
 }
 
-#typora-quick-open-item {
-    background-color: #FAFAFA;
-    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
-    border-style: solid;
-    border-width: 1px;
+#typora-quick-open-input {
+  margin-right: 20px;
 }
 
-#md-notification:before {
-    top: 10px;
+#typora-quick-open-input .input {
+  box-shadow: none;
+  border: none;
+  margin: 0.5rem;
+  margin-left: 0.8rem;
+}
+
+.typora-quick-open-item {
+  background-color: white;
+  border: none;
+  font-weight: 500;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.typora-quick-open-item:hover {
+  background-color: var(--boxes);
+  color: var(--primary-color);
+}
+
+.typora-quick-open-item.active {
+  background-color: var(--boxes);
+  border: none;
+}
+
+.ty-quick-open-category-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  opacity: 1;
+  color: var(--light-text-color);
+  line-height: 32px;
+  padding-top: 6px;
+  height: 32px;
 }
 
 /** focus mode */
-
 .on-focus-mode blockquote {
-    border-left-color: rgba(85, 85, 85, 0.12);
-}
-
-header,
-.context-menu,
-.megamenu-content,
-footer {
-    font-family: var(--font-sans-serif);
-}
-
-.file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state {
-    visibility: visible;
-}
-
-.mac-seamless-mode #typora-sidebar {
-    background-color: var(--side-bar-bg-color);
+  border-left-color: rgba(85, 85, 85, 0.12);
 }
 
 .md-lang {
-    color: #b4654d;
+  color: var(--primary-color);
 }
 
-.html-for-mac .context-menu {
-    --item-hover-bg-color: #E6F0FE;
+/*NOTIFICATION*/
+
+#md-notification {
+  border-bottom: solid 1px var(--borders);
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+}
+
+#md-notifcation .btn {
+  border: 0;
+}
+
+/*PREFERENCES*/
+
+.ty-preferences {
+  font-family: var(--font-family);
+}
+
+.ty-preferences .window-header {
+  justify-content: space-between;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+  border-bottom: solid 1px var(--borders);
+}
+
+.ty-preferences .window-header-content {
+  background-color: white;
+  margin: 0rem;
+}
+
+.ty-preferences .window-header h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0rem;
+  margin-left: 1rem;
+}
+
+.unibody-window .ty-preferences .window-header h2 {
+  margin-left: 1rem !important;
+}
+
+.ty-preferences .window-header-back {
+  margin-left: 1.2rem;
+}
+
+.ty-preferences .window-header-back .icon {
+  border-right: none;
+}
+
+/*preferences sidebar*/
+.ty-preferences .window-content {
+  background-color: white;
+}
+
+.ty-preferences .nav-group-item {
+  color: var(--text-color);
+  height: 2.5rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  padding: 0px 0px 0px 2rem;
+  font-size: 1rem;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.ty-preferences .nav-group-item:hover {
+  background-color: var(--borders);
+  border-radius: 0px;
+}
+
+.ty-preferences .nav-group-item.active {
+  border-radius: 0rem;
+  border: none;
+  outline: 1px solid var(--borders);
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.ty-preferences .pane-sm {
+  background: var(--boxes);
+  flex-basis: 240px;
+  flex-grow: 0;
+  justify-content: center;
+  border-right: 1px solid var(--borders);
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.ty-preferences .pane-sm .list-group {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.ty-preferences .list-group-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ty-preferences .list-group-header div {
+  width: 100%;
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+.ty-preferences .pane-sm .search-input {
+  margin: 0rem !important;
+  width: 100%;
+  font-size: 1rem !important;
+  height: 2.75rem;
+}
+
+.ty-preferences .pane-sm .search-input:active,
+.ty-preferences .pane-sm .search-input:focus {
+  border: solid 1px var(--primary-color) !important;
+  outline: none;
+}
+
+/*preferences main*/
+.ty-preferences .panel-header {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+/*preferences stuff*/
+.ty-preferences .dropdown-menu > li,
+.dropdown-item {
+  font-weight: 500;
+  font-size: 1rem;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+.ty-preferences .dropdown-menu .active,
+.ty-preferences .dropdown-menu li:hover,
+.dropdown-item:hover {
+  background-color: var(--boxes);
+  color: var(--primary-color);
+}
+
+#ty-spell-check-dict-missing-secondary-btn:hover {
+  color: var(--primary-color) !important;
+}
+
+.header-close .icon {
+  border: none !important;
+}
+
+/*DROPDOWN*/
+
+.dropdown-menu:not(.megamenu-menu-list),
+.auto-suggest-container {
+  background-color: var(--bg-color);
+  border: solid 1px var(--borders) !important;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+  user-select: none;
+}
+
+.dropdown-menu > li > a {
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > li > a:hover,
+.menu-style-btn.active,
+.context-menu.dropdown-menu > .active > a,
+.context-menu.dropdown-menu > li > a:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
+}
+
+.menu-style-btn {
+  color: var(--text-color);
+  border: none;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+.menu-style-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
+  border: none;
+}
+
+header .menu-style-btn:hover {
+  background-color: transparent;
+}
+
+.menu-item-container {
+  padding: 0 12px 0 4px;
+}
+
+.menu-item-container a.menu-style-btn {
+  padding: 0.3rem 0.6rem;
+  margin: 0;
+}
+
+.dropdown-menu .divider {
+  border-color: var(--borders);
+}
+
+/*BUTTON*/
+
+.btn,
+button {
+  border: none !important;
+  border-radius: 0.3em !important;
+  color: var(--text-color) !important;
+  transition-duration: 0.2s;
+  transition-property: all;
+  font-size: 0.9em !important;
+  font-weight: 500;
+  outline: none;
+}
+
+.btn-default {
+  border: none !important;
+  border-radius: 0.3em !important;
+  background-color: var(--boxes) !important;
+}
+
+.btn:hover,
+.button-hover {
+  border: none;
+  border-radius: 0.3em;
+  background-color: var(--borders) !important;
+  color: var(--text-color);
+}
+
+button:active,
+button.active,
+.btn:active,
+.btn-default:active {
+  border: none;
+  border-radius: 0.3em;
+  background-color: var(--boxes-darker) !important;
+  box-shadow: none;
+  outline: none;
+  color: var(--text-color);
+}
+
+.btn:focus {
+  border: none !important;
+  outline: none !important;
+  background-color: var(--boxes-darker);
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 0.3em;
+  background-color: var(--primary-color);
+  color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: white;
+  background-color: var(--primary-color-darker) !important;
+}
+
+.btn.dropdown-toggle-split,
+.btn.dropdown-toggle-split:hover {
+  border-radius: 0em 0.3em 0.3em 0em !important;
+}
+
+#ty-spell-check-dict-missing-primary-btn {
+  border-radius: 0.3em 0em 0em 0.3em !important;
+}
+
+.open > .dropdown-toggle.btn-primary {
+  background-color: var(--primary-color);
+  border-color: transparent;
+}
+
+/*GHOST BUTTON*/
+
+.window-header button,
+#close-sidebar-menu-btn,
+.html-for-mac .sidebar-tab-btn,
+.label-hint,
+.ty-table-edit .btn,
+.zoom-hint-button {
+  background-color: transparent !important;
+  color: var(--light-text-color) !important;
+  opacity: 1 !important;
+  transition-duration: 0.2s;
+  transition-property: color;
+}
+
+.window-header button:hover,
+.window-header button:focus,
+#close-sidebar-menu-btn:hover,
+#close-sidebar-menu-btn:focus,
+.html-for-mac .sidebar-tab-btn:hover,
+.html-for-mac .sidebar-tab-btn:focus,
+.label-hint:hover,
+.label-hint:focus,
+.ty-table-edit .btn:hover,
+.ty-table-edit .btn:focus,
+.zoom-hint-button:hover,
+.zoom-hint-button:focus {
+  color: var(--primary-color) !important;
+  background: none !important;
+}
+
+.ty-table-edit .btn.active {
+  color: var(--primary-color) !important;
+  box-shadow: none;
+}
+
+/*IMAGE BUTTON*/
+
+.md-image-btn {
+  background-color: var(--boxes);
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.md-image-btn:before {
+  color: var(--text-color);
+  transition-duration: 0.2s;
+  transition-property: color;
+}
+
+.md-image-btn:hover {
+  background-color: var(--borders);
+}
+
+.md-image-btn:hover:before {
+  color: var(--primary-color);
+}
+
+.md-image-input-src-btn {
+  border-radius: 0.3rem 0rem 0rem 0.3rem !important;
+}
+
+.md-image-pick-file-btn {
+  border-left: none;
+  border-radius: 0rem 0.3rem 0.3rem 0rem !important;
+}
+
+/*SEARCH-INPUTS*/
+
+.search-input,
+.search,
+.form-control,
+#file-library-search-input {
+  background-color: transparent !important;
+  border-radius: 0.3rem !important;
+  border: solid 1px var(--boxes-darker2) !important;
+  box-shadow: none !important;
+  color: var(---heading-text-color) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500;
+  padding: 0.7rem !important;
+  height: 2rem;
+  transition-duration: 0.2s;
+  transition-property: border;
+}
+
+.search-input:focus,
+.search:focus,
+.form-control:focus,
+#file-library-search-input:focus {
+  background-color: transparent !important;
+  border-radius: 0r3em !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: none !important;
+  color: var(--heading-text-color) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500;
+  padding: 0.7rem !important;
+}
+
+.search-input::placeholder,
+.search::placeholder,
+.form-control::placeholder,
+#file-library-search-input::placeholder {
+  color: var(--light-text-color-darker) !important;
+}
+
+.clear-btn-icon {
+  top: 9px !important /*required*/;
+  right: 9px !important /*required*/;
+}
+
+.content tr.search-hit,
+.search-hit,
+.md-search-hit,
+.md-search-hit.md-search-select,
+.md-search-select,
+.ty-file-search-match-text {
+  background: rgba(56, 132, 255, 0.3) !important;
+}
+
+/*ZOOM HINT*/
+
+#zoom-hint {
+  border-radius: 0.3rem;
+  border: solid 1px var(--borders);
+  user-select: none;
+  box-shadow: rgba(116, 129, 141, 0.08) 0px 2px 6px 0px;
+}
+
+#zoom-hint #zoom-hint-reset {
+  border-left: none;
+  font-weight: 600;
+}
+
+/*SEARCHPANEL*/
+
+#md-searchpanel {
+  border-bottom: 1px solid var(--borders);
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+  max-height: 46px;
+}
+
+#md-searchpanel.searchpanel-replace-mode {
+  max-height: 84px;
+}
+
+#md-searchpanel input {
+  height: 2rem;
+  margin: 0rem !important;
+  padding: 6px 12px !important;
+  font-size: 12px !important;
+}
+
+#md-searchpanel .input-group-addon {
+  height: 2rem;
+}
+
+#md-searchpanel .input-group-addon.close-btn {
+  padding-left: 8px;
+}
+
+.unibody-window #md-searchpanel .btn {
+  line-height: 2rem;
+}
+
+.searchpanel-search-option-btn {
+  top: 9px;
+  border: none;
+  color: var(--light-text-color-darker) !important /*required*/;
+  transition-duration: 0.3s;
+}
+
+.searchpanel-search-option-btn:hover {
+  color: var(--primary-color) !important /*required*/;
+  background-color: transparent !important /*required*/;
+}
+
+.searchpanel-search-option-btn.select,
+.searchpanel-search-option-btn.active {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+}
+
+#searchpanel-case-option-btn {
+  right: 33px;
+}
+
+#searchpanel-word-option-btn {
+  right: 9px;
+}
+
+#searchpanel-word-option-btn,
+#searchpanel-case-option-btn {
+  background: none;
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+  box-shadow: none;
+}
+
+/*NUMBER-INPUT*/
+input[type='number'] {
+  background-color: var(--boxes) !important;
+  border: none !important;
+  border-radius: 0.3rem;
+}
+
+input[type='number']:focus {
+  background-color: var(--item-hover-bg-color) !important;
+}
+
+/*SELECTS*/
+
+select {
+  background-color: var(--bg-color) !important;
+  border-radius: 0.3rem !important;
+  border: solid 1px var(--boxes-darker2) !important;
+  box-shadow: none !important;
+  color: var(---heading-text-color) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  padding: 0.3rem !important;
+  height: 2.1rem;
+  transition-duration: 0.2s;
+  transition-property: border;
+}
+
+select:hover {
+  background-color: var(--bg-color) !important;
+  border-radius: 0r3em !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: none !important;
+  color: var(--heading-text-color) !important;
+  font-size: 0.9rem !important;
+}
+
+/*MODAL*/
+
+.modal-header,
+#common-dialog .modal-header {
+  border-bottom: solid 1px var(--borders);
+  padding-bottom: 15px;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  user-select: none;
+}
+
+.modal-body {
+  font-size: 0.9rem;
+  color: var(--light-text-color-darker);
+  user-select: none;
+}
+
+.modal-content {
+  box-shadow: rgba(116, 129, 141, 0.15) 0px 3px 10px 0px;
+  border: solid 1px var(--boxes-darker);
+  border-radius: 0.3rem;
+}
+
+.modal-footer {
+  border-top: solid 1px var(--borders);
+}
+
+.modal-open .modal.fade.in {
+  background: none;
+  backdrop-filter: blur(5px);
+}
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 8px;
+  position: absolute;
+  border-radius: 4.5px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: 0 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--boxes-darker2);
+  background-clip: padding-box;
+  border-radius: 4.5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--boxes-darkest);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--boxes-darkest);
+}
+
+/*LANGS*/
+
+.ty-spell-check-panel-item {
+  font-weight: 500;
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+}
+
+.ty-spell-check-panel-item:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes);
+}
+
+.ty-spell-check-panel-item.ty-active {
+  background-color: var(--boxes);
+}
+
+/*TOOLTIP*/
+
+.ty-tooltip {
+  background-color: var(--bg-color) !important;
+  border-radius: 0.3rem !important;
+  border: 1px solid var(--borders) !important;
+  -webkit-filter: none !important;
+  filter: none;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+}
+
+/*FOOTER*/
+
+.footer-item:hover {
+  background-color: var(--boxes) !important;
+}
+
+#footer-word-count-info {
+  padding: 4px 0;
+}
+
+.footer-word-count-info-line {
+  padding: 0.25rem;
+  line-height: 1.6rem;
+}
+
+#footer-word-count-info tr {
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+#footer-word-count-info tr td:nth-child(1) {
+  padding: 0rem;
+  padding-right: 1rem;
+}
+
+#footer-word-count-info .ty-footer-word-count-all tr:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--boxes) !important;
+}
+
+/*MEGAMENU*/
+
+.megamenu-menu {
+  box-shadow: none;
+  background-color: var(--boxes);
+  border-right: 1px solid var(--borders);
+}
+
+.megamenu-opened .megamenu-menu {
+  left: 0px;
+}
+
+#megamenu-content {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#megamenu-menu-list {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+
+#megamenu-menu-list li a {
+  color: var(--text-color);
+  height: 2rem;
+  line-height: 1.8rem;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+#megamenu-menu-list li a:hover {
+  background-color: var(--borders);
+}
+
+#megamenu-menu-list li a.active {
+  color: var(--primary-color);
+  background-color: white;
+  outline: solid 1px var(--borders);
+}
+
+#megamenu-menu-list .divider {
+  background-color: var(--borders);
+  margin: 16px 0 0 0;
+}
+
+.megamenu-menu-list .saved #m-saved {
+  cursor: default;
+}
+
+.megamenu-menu-list .saved #m-saved .fa {
+  color: var(--primary-color);
+}
+
+.megamenu-menu-list .saved #m-saved:hover {
+  background-color: transparent;
+}
+
+.megamenu-menu-list #m-close:hover {
+  color: var(--danger-color);
+}
+
+.megamenu-menu-header {
+  border-bottom: solid 1px var(--borders);
+  margin-bottom: 1.2rem;
+  height: 74px;
+  transition-duration: 0.3s;
+}
+
+.megamenu-menu-header:hover {
+  background-color: var(--borders);
+}
+
+.megamenu-menu-header #megamenu-menu-header-title {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 16px;
+  left: 56px;
+  top: 24px;
+}
+
+#megamenu-back-btn {
+  color: var(--text-color);
+  font-size: 16px;
+  left: 24px;
+  top: 24px;
+}
+
+.megamenu-opened header {
+  background-color: var(--bg-color);
+  background-image: none;
+}
+
+.megamenu-content {
+  background-color: var(--bg-color);
+  background-image: none;
+}
+
+.megamenu-menu-panel:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+.megamenu-menu-panel h1 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin: 1rem 0rem 0.4rem 0rem;
+}
+
+.megamenu-menu-panel h2 {
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 1rem 0rem 0.4rem 0rem;
+}
+
+/*recent files*/
+
+#recent-file-panel tbody tr {
+  font-weight: 600;
+  transition-duration: 0.4s;
+}
+
+#recent-file-panel tbody tr:hover,
+.megamenu-menu-panel tbody tr:hover td:nth-child(1) {
+  color: var(--primary-color);
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+  background-color: var(--boxes);
+}
+
+/*about help*/
+
+.about-content-slogon {
+  color: var(--light-text-color);
+}
+
+/*for the god himself*/
+.about-content-slogon span {
+  color: var(--primary-color) !important;
+}
+
+#about-content tbody tr {
+  font-weight: 500;
+  transition-duration: 0.4s;
+}
+
+#about-content tbody tr:hover {
+  color: var(--primary-color);
+  background-color: var(--boxes) !important /*required important*/;
+}
+
+.long-btn {
+  margin-bottom: 12px;
+  margin-left: 2px;
+  box-shadow: rgba(116, 129, 141, 0.1) 2px 2px 6px;
+  background-color: white;
+  border: 1px solid var(--borders);
+  border-radius: 0.3rem;
+  padding: 1rem;
+
+  font-weight: 700;
+  font-size: 1rem;
+
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.long-btn:hover {
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+  color: white !important /*important required*/;
+  box-shadow: rgba(116, 129, 141, 0.1) 2px 2px 6px, rgba(26, 168, 139, 0.2) 0px 0px 10px;
+}
+
+#m-import-local:hover .preference-item-hint {
+  color: white;
+  opacity: 0.7;
+}
+
+#recent-file-panel-action-btn {
+  height: 34px;
+  border: none;
+  background-color: var(--boxes);
+}
+
+#theme-preview-grid {
+  max-width: none;
+  padding: 1.5rem;
+  background-color: var(--boxes);
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.theme-preview-div {
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 0px 15px;
+  margin: 0rem;
+  transition-duration: 0.3s;
+}
+
+.theme-preview-div:hover {
+  box-shadow: rgba(116, 129, 141, 0.5) 3px 8px 15px;
+  cursor: pointer;
+  transform: rotate3d(1, -0.2, 0.2, 15deg);
+}
+
+.theme-preview-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+}
+
+.theme-preview-content html {
+  width: 100%;
+  height: 100%;
+}
+
+.theme-preview-div.active .fa {
+  color: var(--primary-color);
+  bottom: 4px;
+  left: 4px;
+}
+
+.theme-preview-div .fa-check-circle:before {
+  background-color: var(--bg-color);
+  padding: 0px 2px;
+  border-radius: 1rem;
+}
+
+.megamenu-menu-panel tbody tr {
+  border-radius: 0.3rem;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+}
+
+.megamenu-menu-panel tbody tr:hover {
+  background-color: var(--borders) !important /*required important*/;
+}
+
+/*MIN MAX CLOSE*/
+#w-min,
+#w-max,
+#w-restore,
+#w-close {
+  border-radius: 0px !important;
+  font-size: 10px !important;
+  width: 46px !important;
+  height: 29px !important;
+}
+
+.btn.toolbar-icon svg,
+.btn.toolbar-icon .ty-icon {
+  position: relative;
+  top: 2px;
+}
+
+#w-close.btn.toolbar-icon .ty-icon {
+  left: 1px;
+}
+
+#w-close:hover {
+  background-color: var(--danger-color) !important;
+  color: white !important;
+}
+
+/*EXTRA STUFF*/
+
+a[type='page-link'] {
+  display: block;
+  background-color: white;
+  box-shadow: rgba(116, 129, 141, 0.2) 0px 3px 8px 0px;
+  border: 1px solid var(--borders);
+  border-radius: 0.3rem;
+  padding: 1rem;
+
+  font-weight: 600;
+
+  transition-duration: 0.2s;
+  transition-property: border, box-shadow;
+}
+
+a[type='page-link']:hover {
+  box-shadow: rgba(116, 129, 161, 0.1) 0px 3px 8px 0px;
+  border: 1px solid var(--primary-color);
+}
+
+p[type='description'] {
+  color: var(--light-text-color);
+  margin: 0rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -689,6 +2358,6 @@ footer {
 </style>
 </head>
 <body class='typora-export'>
-<div id='write'  class=''><p><img src="logo-unilab.png" alt="logo-unilab" style="zoom:80%; align:center" /></p><h1><a name="bhum0004---processos-coloniais-e-a-construção-da-modernidade" class="md-header-anchor"></a><span>BHUM0004 - PROCESSOS COLONIAIS E A CONSTRUÇÃO DA MODERNIDADE</span></h1><p><span>Professor </span><a href='https://ericbrasiln.github.io'><em><span>Eric Brasil</span></em></a></p><p><span>Bacharelado Interdisciplinar em Humanidades</span></p><p><strong><span>Instituto de Humanidades e Letras, campus dos Malês, Universidade da Integração Internacional da Lusofonia Afro-brasileira (UNILAB)</span></strong></p><p><strong><span>Semestre</span></strong><span>: 2020.1</span></p><p><strong><span>Carga Horária</span></strong><span>: 60 horas</span></p><blockquote><p><strong><span>A disciplina busca apresentar aos discentes os debates conceituais e historiográficos acerca dos variados processos coloniais, nas Américas, na África e na Ásia, focando em sua relação com a construção de noções de modernidade em diferentes contextos, propiciando a compreensão das diferenças e semelhanças desses processos, contribuindo para a construção de pensamento autônomo e crítico acerca de práticas, discursos e concepções colonialistas, eurocêntricas e racistas presentes tanto nas produções científicas quanto na prática social.</span></strong></p></blockquote><h2><a name="índice" class="md-header-anchor"></a><span>Índice</span></h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n3"><a class="md-toc-inner" href="#bhum0004---processos-coloniais-e-a-construção-da-modernidade">BHUM0004 - PROCESSOS COLONIAIS E A CONSTRUÇÃO DA MODERNIDADE</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n11"><a class="md-toc-inner" href="#índice">Índice</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n13"><a class="md-toc-inner" href="#fountainpen-ementa">🖋 Ementa</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n17"><a class="md-toc-inner" href="#computer-metodologias-de-ensino">💻 Metodologias de ensino</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n30"><a class="md-toc-inner" href="#videocamera-recursos-didáticos">📹 Recursos Didáticos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n42"><a class="md-toc-inner" href="#spiralnotepad-avaliação-da-aprendizagem">🗒 Avaliação da aprendizagem</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n57"><a class="md-toc-inner" href="#spiralcalendar-cronograma">🗓 Cronograma</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n58"><a class="md-toc-inner" href="#módulo-1-conceitos-diferenças-e-historiografia----12h">Módulo 1. Conceitos, diferenças e historiografia – 12h</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n94"><a class="md-toc-inner" href="#módulo-2-instituições-e-métodos-de-administração-colonial----12h">Módulo 2. Instituições e métodos de administração colonial – 12h</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n132"><a class="md-toc-inner" href="#módulo-3-eurocentrismo-religião-civilização-história-e-progresso----9h">Módulo 3. Eurocentrismo, religião, civilização, História e Progresso – 9h</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n169"><a class="md-toc-inner" href="#módulo-4-experiências-anticoloniais----12h">Módulo 4. Experiências anticoloniais – 12h</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n205"><a class="md-toc-inner" href="#módulo-5--racismo-modernidade-e-independências----15h">Módulo 5.  Racismo, modernidade e independências – 15h</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n246"><a class="md-toc-inner" href="#books-leituras-obrigatórias">📚 Leituras Obrigatórias</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n247"><a class="md-toc-inner" href="#leitura-1">Leitura 1</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n253"><a class="md-toc-inner" href="#leitura-2">Leitura 2</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n259"><a class="md-toc-inner" href="#leitura-3">Leitura 3</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n269"><a class="md-toc-inner" href="#leitura-4">Leitura 4</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n275"><a class="md-toc-inner" href="#leitura-5">Leitura 5</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n286"><a class="md-toc-inner" href="#inboxtray-contatos">📥 Contatos</a></span></p></div><h2><a name="fountainpen-ementa" class="md-header-anchor"></a>🖋<span> Ementa</span></h2><p><span>Tipologia das situações coloniais modernas e contemporâneas (povoamento e exploração, colônias e protetorados, administração direta e indireta, colonialismo, imperialismo e neocolonialismo). Eurocentrismo, religião e civilização na estruturação das sociedades coloniais e do Estado nas Américas, África e Ásia. Alterização, racialização e etnização. Instituições e métodos da administração colonial. Resistência e adaptação à dominação ocidental. Processos de independência e projetos de nação no século XIX (Américas) e no século XX (Ásia e África). Estado pós-colonial, modernização e disputas em torno da cidadania.</span></p><p><a href='#índice'><span>Voltar ao índice</span></a></p><hr /><h2><a name="computer-metodologias-de-ensino" class="md-header-anchor"></a>💻<span> Metodologias de ensino</span></h2><p><span>O curso será divido em 5 módulos. Cada módulo reúne um conjunto de aulas síncronas (utilizando o Google Meet) e tarefas assíncronas (vídeos, leituras e tarefas práticas).</span></p><ul><li><span>As aulas síncronas (AS) terão entre uma hora e meia e duas horas de duração (sem cobrança de presença) e acontecerão entre 19h e 21h nas datas definidas no </span><a href='#cronograma'><span>cronograma</span></a><span>.</span></li><li><span>As tarefas assíncronas (TA) estão divididas entre leituras e vídeos e realização de exercícios práticos.</span></li><li><em><span>Atividades avaliativas</span></em><span> (AT). Teremos três dessas </span><em><span>atividades</span></em><span>, que devem ser entregues via SIGAA e servem como controle de </span><strong><span>presenças e avaliação</span></strong><span>.</span></li><li><span>Todo cronograma, atividades, links, textos, vídeos e apresentações estarão disponíveis no SIGAA.</span></li></ul><p><a href='#índice'><span>Voltar ao índice</span></a></p><hr /><h2><a name="videocamera-recursos-didáticos" class="md-header-anchor"></a>📹<span> Recursos Didáticos</span></h2><ul><li><span>Google Meet;</span></li><li><span>SIGAA;</span></li><li><span>Vídeo-aulas;</span></li><li><span>Softwares e recursos on-line gratuitos: </span><strong><span>em breve.</span></strong></li></ul><p><a href='#índice'><span>Voltar ao índice</span></a></p><hr /><h2><a name="spiralnotepad-avaliação-da-aprendizagem" class="md-header-anchor"></a>🗒<span> Avaliação da aprendizagem</span></h2><ul><li><p><span>O/a discente terá três atividades assíncronas que devem ser entregues pelo SIGAA ao longo do curso:</span></p><ul><li><span>AT1 = 2,5 pontos + presenças</span></li><li><span>AT2 = 2,5 pontos + presenças</span></li><li><span>AT3 = 5,0 pontos + presenças</span></li></ul></li><li><p><span>Os prazos estão definidos no </span><a href='#cronograma'><span>cronograma</span></a><span> do curso.</span></p></li></ul><p><a href='#índice'><span>Voltar ao índice</span></a></p><hr /><h2><a name="spiralcalendar-cronograma" class="md-header-anchor"></a>🗓<span> Cronograma</span></h2><h3><a name="módulo-1-conceitos-diferenças-e-historiografia----12h" class="md-header-anchor"></a><span>Módulo 1. Conceitos, diferenças e historiografia – 12h</span></h3><p><span>Período: </span><strong><u><span>18/01/2021 - 26/01/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Tarefa Assíncrona 1</span></th><th><span>Aula síncrona 1</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>19/01/2021 – 27/01/2020</span></td><td><span>13/01/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>4h</span></td></tr><tr><td><span>Tema</span></td><td><a href='https://forms.gle/o1HD9QAq9jowhE8N6'><span>Formulário de apresentação</span></a></td><td><span>PAULO: Sentido da Colonização</span></td></tr></tbody></table></figure><figure><table><thead><tr><th><span>Tipo</span></th><th><a href='#leitura-1'><span>Leitura1</span></a></th><th><span>Aula síncrona 2</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>s/d</span></td><td><span>20/01/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>4h</span></td><td><span>2h</span></td></tr><tr><td><span>Tema</span></td><td><span>Ver SIGAA</span></td><td><span>História dos conceitos: Modernidade, Colonialismo, Imperialismo e Neocolonialismo</span></td></tr></tbody></table></figure><h3><a name="módulo-2-instituições-e-métodos-de-administração-colonial----12h" class="md-header-anchor"></a><span>Módulo 2. Instituições e métodos de administração colonial – 12h</span></h3><p><span>Período: </span><strong><u><span>27/01/2021 - 09/21/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Tarefa Assíncrona 2</span></th><th><a href='#leitura-2'><span>Leitura2</span></a></th><th><span>Aula síncrona 3</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>27/01/21</span></td><td><span>s/d</span></td><td><span>03/02/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>4h</span></td><td><span>2h</span></td></tr><tr><td><span>Tema</span></td><td><a href='https://youtu.be/JJYmkvZDOd8'><span>Vídeo de apoio</span></a></td><td><span>Ver SIGAA</span></td><td><span>Instituições e métodos de administração colonial</span></td></tr></tbody></table></figure><hr /><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Atividade 1</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><strong><span>Entrega 24/02/2021</span></strong></td></tr><tr><td><span>Carga Horária</span></td><td><span>4h</span></td></tr><tr><td><span>Tema</span></td><td><span>Ver SIGAA</span></td></tr></tbody></table></figure><hr /><h3><a name="módulo-3-eurocentrismo-religião-civilização-história-e-progresso----9h" class="md-header-anchor"></a><span>Módulo 3. Eurocentrismo, religião, civilização, História e Progresso – 9h</span></h3><p><span>Período: </span><strong><u><span>10/02/2021 - 209/03/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Tarefa Assíncrona 4</span></th><th><a href='#leitura-3'><span>Leitura3</span></a></th><th><span>Aula síncrona 4</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>10/02/221</span></td><td><span>s/d</span></td><td><span>24/02/21</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>4h</span></td><td><span>1h30</span></td></tr><tr><td><span>Tema</span></td><td><span>O perigo de uma História Única [Ver SIGAA]</span></td><td><span>Ver SIGAA</span></td><td><span>Etnocentrismo e eurocentrismo</span></td></tr></tbody></table></figure><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Aula síncrona 5</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>03/03/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>1h30</span></td></tr><tr><td><span>Tema</span></td><td><span>Violências simbólicas e materiais na formação das sociedades coloniais e na historiografia</span></td></tr></tbody></table></figure><hr /><h3><a name="módulo-4-experiências-anticoloniais----12h" class="md-header-anchor"></a><span>Módulo 4. Experiências anticoloniais – 12h</span></h3><p><span>Período: </span><strong><u><span>10/03/2021 - 23/03/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Aula síncrona 6</span></th><th><a href='#leitura-4'><span>Leitura4</span></a></th><th><span>Convidado - Matheus S. Pereira</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>10/03/2021</span></td><td><span>s/d</span></td><td><span>17/03/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>4h</span></td><td><span>2h</span></td></tr><tr><td><span>Tema</span></td><td><span>Estratégias de enfrentamento ao Colonialismo</span></td><td><span>Ver SIGAA</span></td><td><span>Resistências e negociações em Moçambique: história e historiografia</span></td></tr></tbody></table></figure><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Atividade 2</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><strong><span>Entrega 31/03/2021</span></strong></td></tr><tr><td><span>Carga Horária</span></td><td><span>4h</span></td></tr><tr><td><span>Tema</span></td><td><span>Ver SIGAA</span></td></tr></tbody></table></figure><h3><a name="módulo-5--racismo-modernidade-e-independências----15h" class="md-header-anchor"></a><span>Módulo 5.  Racismo, modernidade e independências – 15h</span></h3><p><span>Período: </span><strong><u><span>24/03/2021 - 14/04/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Convidada - </span><a href='http://lattes.cnpq.br/0860853837341761'><span>Bethânia Pereira</span></a></th><th><span>Aula síncrona 8</span></th><th><a href='#leitura-5'><span>Leitura5</span></a></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>24/03/21</span></td><td><span>31/03/21</span></td><td><span>s/d</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>1h30</span></td><td><span>4h</span></td></tr><tr><td><span>Tema</span></td><td><span>Raça, modernidade e cidadania nas Américas - o caso do Haiti</span></td><td><span>Imperialismo e modernidade no século XX</span></td><td><span>Ver SIGAA</span></td></tr></tbody></table></figure><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Convidado - Alexandre Reis</span></th><th><span>Atividade 3</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>07/04/2021</span></td><td><span>Entrega 14/04/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>6h</span></td></tr><tr><td><span>Tema</span></td><td><span>Processos de independência e projetos de nação</span></td><td><span>Ver SIGAA</span></td></tr></tbody></table></figure><p><a href='#índice'><span>Voltar ao índice</span></a></p><h2><a name="books-leituras-obrigatórias" class="md-header-anchor"></a>📚<span> Leituras Obrigatórias</span></h2><h3><a name="leitura-1" class="md-header-anchor"></a><span>Leitura 1</span></h3><ol start='' ><li><span>SILVA, Kalina Vanderlei; SILVA, Maciel Henrique. Dicionário de conceitos históricos. São Paulo: Contexto, 2009. verbetes - Colonização (67); Imperialismo (218);  Modernidade (297).</span></li><li><span>JUNQUEIRA, Mary Anne. Colônia de povoamento e colônia de exploração. Reflexões e questionamentos sobre um mito? In: Abreu, M.; Soihet, R.; Gontijo, R. </span><strong><span>Cultura política e leituras do passado:</span></strong><span> historiografia e ensino de História. Rio de Janeiro: Civilização Brasileira, 2007.</span></li></ol><h3><a name="leitura-2" class="md-header-anchor"></a><span>Leitura 2</span></h3><ol start='' ><li><span>BETTS, Raymon. A dominação europeia: métodos e instituições. In: BOAHEN, A. Adu (Org.). </span><strong><span>África sob dominação colonial, 1880-1935.</span></strong><span> 2. ed. rev. Brasília: UNESCO, 2010. (História Geral da África, VII).</span></li><li><span>RAMINELLI, R. Nobreza indígena da Nova Espanha: alianças e conquistas. </span><strong><em><span>Tempo</span></em></strong><span>, v. 14, n. 27, p. 68–81, 2009. </span></li></ol><h3><a name="leitura-3" class="md-header-anchor"></a><span>Leitura 3</span></h3><ol start='' ><li><span>CHATTERJEE, Partha. Quinhentos anos de medo e amor. In: </span><strong><span>Colonialismo, modernidade e política</span></strong><span>. Salvador: Edufba, 2004.</span></li><li><span>SILVA,Kalina Vanderlei; SILVA, Maciel Henrique. Etnocentrismo. In: </span><strong><span>Dicionário de conceitos históricos</span></strong><span>. São Paulo : Contexto, 2009. p.27-31</span></li><li><span>BARBOSA, Muryatan Santana. “Eurocentrismo, História e História da África”. </span><em><span>Sankofa</span></em><span>. </span><em><span>Revista de História da África e de Estudos da Diáspora Africana</span></em><span>. Nº 1 jun./2008. </span></li><li><span>SETH, Sanjay. “Sociologia histórica e teoria pós-colonial: duas estratégias para desafiar o eurocentrismo”. </span><em><span>Revista Expedições: Teoria da História &amp; Historiografia</span></em><span>. V. 7, N.1, Janeiro-Julho de 2016.</span></li></ol><h3><a name="leitura-4" class="md-header-anchor"></a><span>Leitura 4</span></h3><ol start='' ><li><span>JAMES, C. L. R. Preâmbulo; Prefácio à primeira edição; Prólogo; As massas de São Domingos começam. In: </span><strong><span>Os jacobinos negros:</span></strong><span> Toussaint L’Ouverture e a revolução de São Domingos. São Paulo: Boitempo, 2000, p. 91-119.</span></li><li><span>ISAACMAN, Allen e VANSINA, Jan. Iniciativas e resistência africanas na África central, 1880-1914. In: BOAHEN, A. Adu (Org.). </span><strong><span>África sob dominação colonial, 1880-1935.</span></strong><span> 2. ed. rev. Brasília: UNESCO, 2010. (História Geral da África, VII)</span></li></ol><h3><a name="leitura-5" class="md-header-anchor"></a><span>Leitura 5</span></h3><ol start='' ><li><span>MATA, Iacy Maia. Política, Raça e Repressão em Santiago de Cuba após a lei de Emancipação (1880). In: </span><em><span>XXVII Simpósio Nacional de História</span></em><span>, 2013, Natal. Anais do XXVII Simpósio Nacional de História: Conhecimento histórico e diálogo social. São Paulo: Anpuh, 2013.</span></li><li><span>BRASIL, Eric. “Carnaval como direito: a Revolta Canboulay de 1881, em Port-of-Spain, Trinidad”. </span><em><span>Revista Eletrônica da ANPHLAC</span></em><span>, ISSN 1679-1061, Nº. 20, p. 48-77, Jan/Jun., 2016.</span></li><li><span>COOPER, Frederick. Condições Análogas à escravidão: imperialismo e ideologia da mão-de-obra livre na África. In: COOPER, Frederick; SCOTT, Rebecca J.; HOLT, Thomas C. </span><strong><span>Além da escravidão</span></strong><span>: investigações sobre raça, trabalho e cidadania em sociedades pós-emancipação. Rio de Janeiro: Civilização Brasileira, 2005.</span></li></ol><hr /><p><a href='#índice'><span>Voltar ao índice</span></a></p><h2><a name="inboxtray-contatos" class="md-header-anchor"></a>📥<span> Contatos</span></h2><ul><li><span>E-mail: </span><a href='mailto:profericbrasil@unilab.edu.br' target='_blank' class='url'>profericbrasil@unilab.edu.br</a></li><li><a href='https://twitter.com/ericbrasiln'><span>Twitter - ericbrasiln</span></a></li><li><a href='https://www.instagram.com/ericbrasiln/'><span>Instagram - ericbrasiln</span></a></li><li><a href='https://ericbrasiln.github.io/'><span>Site</span></a></li></ul><p><a href='#índice'><span>Voltar ao índice</span></a></p><p><a href='https://ericbrasiln.github.io/bhum0004/'><span>Voltar a apresentação</span></a></p></div>
+<div id='write'  class=''><p><img src="logo-unilab.png" alt="logo-unilab" style="zoom:80%; align:center" /></p><h1><a name="bhum0004---processos-coloniais-e-a-construção-da-modernidade" class="md-header-anchor"></a><span>BHUM0004 - PROCESSOS COLONIAIS E A CONSTRUÇÃO DA MODERNIDADE</span></h1><p><span>Professor </span><a href='https://ericbrasiln.github.io'><em><span>Eric Brasil</span></em></a></p><p><span>Bacharelado Interdisciplinar em Humanidades</span></p><p><strong><span>Instituto de Humanidades e Letras, campus dos Malês, Universidade da Integração Internacional da Lusofonia Afro-brasileira (UNILAB)</span></strong></p><p><strong><span>Semestre</span></strong><span>: 2020.1</span></p><p><strong><span>Carga Horária</span></strong><span>: 60 horas</span></p><blockquote><p><strong><span>A disciplina busca apresentar aos discentes os debates conceituais e historiográficos acerca dos variados processos coloniais, nas Américas, na África e na Ásia, focando em sua relação com a construção de noções de modernidade em diferentes contextos, propiciando a compreensão das diferenças e semelhanças desses processos, contribuindo para a construção de pensamento autônomo e crítico acerca de práticas, discursos e concepções colonialistas, eurocêntricas e racistas presentes tanto nas produções científicas quanto na prática social.</span></strong></p></blockquote><h2><a name="índice" class="md-header-anchor"></a><span>Índice</span></h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n3"><a class="md-toc-inner" href="#bhum0004---processos-coloniais-e-a-construção-da-modernidade">BHUM0004 - PROCESSOS COLONIAIS E A CONSTRUÇÃO DA MODERNIDADE</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n11"><a class="md-toc-inner" href="#índice">Índice</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n13"><a class="md-toc-inner" href="#fountainpen-ementa">🖋 Ementa</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n17"><a class="md-toc-inner" href="#computer-metodologias-de-ensino">💻 Metodologias de ensino</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n30"><a class="md-toc-inner" href="#videocamera-recursos-didáticos">📹 Recursos Didáticos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n42"><a class="md-toc-inner" href="#spiralnotepad-avaliação-da-aprendizagem">🗒 Avaliação da aprendizagem</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n57"><a class="md-toc-inner" href="#spiralcalendar-cronograma">🗓 Cronograma</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n58"><a class="md-toc-inner" href="#módulo-1-conceitos-diferenças-e-historiografia----12h">Módulo 1. Conceitos, diferenças e historiografia – 12h</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n94"><a class="md-toc-inner" href="#módulo-2-instituições-e-métodos-de-administração-colonial----12h">Módulo 2. Instituições e métodos de administração colonial – 12h</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n132"><a class="md-toc-inner" href="#módulo-3-eurocentrismo-religião-civilização-história-e-progresso----9h">Módulo 3. Eurocentrismo, religião, civilização, História e Progresso – 9h</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n169"><a class="md-toc-inner" href="#módulo-4-experiências-anticoloniais----11h">Módulo 4. Experiências anticoloniais – 11h</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n205"><a class="md-toc-inner" href="#módulo-5--racismo-modernidade-e-independências----16h">Módulo 5.  Racismo, modernidade e independências – 16h</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n246"><a class="md-toc-inner" href="#books-leituras-obrigatórias">📚 Leituras Obrigatórias</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n247"><a class="md-toc-inner" href="#leitura-1">Leitura 1</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n253"><a class="md-toc-inner" href="#leitura-2">Leitura 2</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n259"><a class="md-toc-inner" href="#leitura-3">Leitura 3</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n269"><a class="md-toc-inner" href="#leitura-4">Leitura 4</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n277"><a class="md-toc-inner" href="#leitura-5">Leitura 5</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n286"><a class="md-toc-inner" href="#inboxtray-contatos">📥 Contatos</a></span></p></div><h2><a name="fountainpen-ementa" class="md-header-anchor"></a>🖋<span> Ementa</span></h2><p><span>Tipologia das situações coloniais modernas e contemporâneas (povoamento e exploração, colônias e protetorados, administração direta e indireta, colonialismo, imperialismo e neocolonialismo). Eurocentrismo, religião e civilização na estruturação das sociedades coloniais e do Estado nas Américas, África e Ásia. Alterização, racialização e etnização. Instituições e métodos da administração colonial. Resistência e adaptação à dominação ocidental. Processos de independência e projetos de nação no século XIX (Américas) e no século XX (Ásia e África). Estado pós-colonial, modernização e disputas em torno da cidadania.</span></p><p><a href='#índice'><span>Voltar ao índice</span></a></p><hr /><h2><a name="computer-metodologias-de-ensino" class="md-header-anchor"></a>💻<span> Metodologias de ensino</span></h2><p><span>O curso será divido em 5 módulos. Cada módulo reúne um conjunto de aulas síncronas (utilizando o Google Meet) e tarefas assíncronas (vídeos, leituras e tarefas práticas).</span></p><ul><li><span>As aulas síncronas (AS) terão entre uma hora e meia e duas horas de duração (sem cobrança de presença) e acontecerão entre 19h e 21h nas datas definidas no </span><a href='#cronograma'><span>cronograma</span></a><span>.</span></li><li><span>As tarefas assíncronas (TA) estão divididas entre leituras e vídeos e realização de exercícios práticos.</span></li><li><em><span>Atividades avaliativas</span></em><span> (AT). Teremos três dessas </span><em><span>atividades</span></em><span>, que devem ser entregues via SIGAA e servem como controle de </span><strong><span>presenças e avaliação</span></strong><span>.</span></li><li><span>Todo cronograma, atividades, links, textos, vídeos e apresentações estarão disponíveis no SIGAA.</span></li></ul><p><a href='#índice'><span>Voltar ao índice</span></a></p><hr /><h2><a name="videocamera-recursos-didáticos" class="md-header-anchor"></a>📹<span> Recursos Didáticos</span></h2><ul><li><span>Google Meet;</span></li><li><span>SIGAA;</span></li><li><span>Vídeo-aulas;</span></li><li><span>Softwares e recursos on-line gratuitos: </span><strong><span>em breve.</span></strong></li></ul><p><a href='#índice'><span>Voltar ao índice</span></a></p><hr /><h2><a name="spiralnotepad-avaliação-da-aprendizagem" class="md-header-anchor"></a>🗒<span> Avaliação da aprendizagem</span></h2><ul><li><p><span>O/a discente terá três atividades assíncronas que devem ser entregues pelo SIGAA ao longo do curso:</span></p><ul><li><span>AT1 = 2,5 pontos + presenças</span></li><li><span>AT2 = 2,5 pontos + presenças</span></li><li><span>AT3 = 5,0 pontos + presenças</span></li></ul></li><li><p><span>Os prazos estão definidos no </span><a href='#cronograma'><span>cronograma</span></a><span> do curso.</span></p></li></ul><p><a href='#índice'><span>Voltar ao índice</span></a></p><hr /><h2><a name="spiralcalendar-cronograma" class="md-header-anchor"></a>🗓<span> Cronograma</span></h2><h3><a name="módulo-1-conceitos-diferenças-e-historiografia----12h" class="md-header-anchor"></a><span>Módulo 1. Conceitos, diferenças e historiografia – 12h</span></h3><p><span>Período: </span><strong><u><span>18/01/2021 - 26/01/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Tarefa Assíncrona 1</span></th><th><span>Aula síncrona 1</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>19/01/2021 – 27/01/2020</span></td><td><span>13/01/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>4h</span></td></tr><tr><td><span>Tema</span></td><td><a href='https://forms.gle/o1HD9QAq9jowhE8N6'><span>Formulário de apresentação</span></a></td><td><span>PAULO: Sentido da Colonização</span></td></tr></tbody></table></figure><figure><table><thead><tr><th><span>Tipo</span></th><th><a href='#leitura-1'><span>Leitura1</span></a></th><th><a href='https://ericbrasiln.github.io/bhum0004/#/2'><span>Aula síncrona 2</span></a></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>s/d</span></td><td><span>20/01/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>4h</span></td><td><span>2h</span></td></tr><tr><td><span>Tema</span></td><td><span>Ver SIGAA</span></td><td><span>História dos conceitos: Modernidade, Colonialismo, Imperialismo e Neocolonialismo - </span><a href='https://youtu.be/FU7st0lOJ1I'><span>Gravação</span></a></td></tr></tbody></table></figure><h3><a name="módulo-2-instituições-e-métodos-de-administração-colonial----12h" class="md-header-anchor"></a><span>Módulo 2. Instituições e métodos de administração colonial – 12h</span></h3><p><span>Período: </span><strong><u><span>27/01/2021 - 09/21/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Tarefa Assíncrona 2</span></th><th><a href='#leitura-2'><span>Leitura2</span></a></th><th><a href='https://ericbrasiln.github.io/bhum0004/#/7'><span>Aula síncrona 3</span></a></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>27/01/21</span></td><td><span>s/d</span></td><td><span>03/02/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>4h</span></td><td><span>2h</span></td></tr><tr><td><span>Tema</span></td><td><a href='https://youtu.be/JJYmkvZDOd8'><span>Vídeo de apoio</span></a></td><td><span>Ver SIGAA</span></td><td><span>Instituições e métodos de administração colonial - </span><a href='https://youtu.be/gmMm1_N8UJg'><span>Gravação</span></a></td></tr></tbody></table></figure><hr /><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Atividade 1</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><strong><span>Entrega 24/02/2021</span></strong></td></tr><tr><td><span>Carga Horária</span></td><td><span>4h</span></td></tr><tr><td><span>Tema</span></td><td><span>Ver SIGAA</span></td></tr></tbody></table></figure><hr /><h3><a name="módulo-3-eurocentrismo-religião-civilização-história-e-progresso----9h" class="md-header-anchor"></a><span>Módulo 3. Eurocentrismo, religião, civilização, História e Progresso – 9h</span></h3><p><span>Período: </span><strong><u><span>10/02/2021 - 209/03/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Tarefa Assíncrona 4</span></th><th><a href='#leitura-3'><span>Leitura3</span></a></th><th><a href='https://ericbrasiln.github.io/bhum0004/#/12'><span>Aula síncrona 4</span></a></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>10/02/221</span></td><td><span>s/d</span></td><td><span>24/02/21</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>4h</span></td><td><span>1h30</span></td></tr><tr><td><span>Tema</span></td><td><a href='https://youtu.be/D9Ihs241zeg'><span>O perigo de uma História Única</span></a></td><td><span>Ver SIGAA</span></td><td><span>Etnocentrismo e eurocentrismo - Gravação (em breve)</span></td></tr></tbody></table></figure><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Tarefa assíncrona 5</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>03/03/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>1h30</span></td></tr><tr><td><span>Tema</span></td><td><span>Vídeo: </span><a href='https://youtu.be/CpYyboPVF5U'><span>A razão africana de Muryatan Barbosa</span></a></td></tr></tbody></table></figure><hr /><h3><a name="módulo-4-experiências-anticoloniais----11h" class="md-header-anchor"></a><span>Módulo 4. Experiências anticoloniais – 11h</span></h3><p><span>Período: </span><strong><u><span>10/03/2021 - 23/03/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Aula síncrona 5</span></th><th><a href='#leitura-4'><span>Leitura4</span></a></th><th><span>Aula síncrona 6 - Convidado - Matheus S. Pereira</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>10/03/2021</span></td><td><span>s/d</span></td><td><span>17/03/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>1h</span></td><td><span>4h</span></td><td><span>2h</span></td></tr><tr><td><span>Tema</span></td><td><span>Estratégias de enfrentamento ao Colonialismo</span></td><td><span>Ver SIGAA</span></td><td><span>Resistências e negociações em Moçambique: história e historiografia</span></td></tr></tbody></table></figure><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Atividade 2</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><strong><span>Entrega 31/03/2021</span></strong></td></tr><tr><td><span>Carga Horária</span></td><td><span>4h</span></td></tr><tr><td><span>Tema</span></td><td><span>Ver SIGAA</span></td></tr></tbody></table></figure><h3><a name="módulo-5--racismo-modernidade-e-independências----16h" class="md-header-anchor"></a><span>Módulo 5.  Racismo, modernidade e independências – 16h</span></h3><p><span>Período: </span><strong><u><span>24/03/2021 - 14/04/2021</span></u></strong></p><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Aula síncrona 7 - Convidada - </span><a href='http://lattes.cnpq.br/0860853837341761'><span>Bethânia Pereira</span></a></th><th><span>Aula síncrona 8</span></th><th><a href='#leitura-5'><span>Leitura5</span></a></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>24/03/21</span></td><td><span>31/03/21</span></td><td><span>s/d</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>1h</span></td><td><span>4h</span></td></tr><tr><td><span>Tema</span></td><td><span>Raça, modernidade e cidadania nas Américas - o caso do Haiti</span></td><td><span>Imperialismo e modernidade e trabalho no século XX</span></td><td><span>Ver SIGAA</span></td></tr></tbody></table></figure><figure><table><thead><tr><th><span>Tipo</span></th><th><span>Aula Síncrona 9 - Convidado - Alexandre Reis</span></th><th><span>Aula síncrona 10</span></th><th><span>Atividade 3</span></th></tr></thead><tbody><tr><td><span>Data</span></td><td><span>07/04/2021</span></td><td><span>14/04/2021</span></td><td><span>Entrega 14/04/2021</span></td></tr><tr><td><span>Carga Horária</span></td><td><span>2h</span></td><td><span>1h</span></td><td><span>6h</span></td></tr><tr><td><span>Tema</span></td><td><span>Processos de independência e projetos de nação</span></td><td><span>Encerramento</span></td><td><span>Ver SIGAA</span></td></tr></tbody></table></figure><p><a href='#índice'><span>Voltar ao índice</span></a></p><h2><a name="books-leituras-obrigatórias" class="md-header-anchor"></a>📚<span> Leituras Obrigatórias</span></h2><h3><a name="leitura-1" class="md-header-anchor"></a><span>Leitura 1</span></h3><ol start='' ><li><span>SILVA, Kalina Vanderlei; SILVA, Maciel Henrique. Dicionário de conceitos históricos. São Paulo: Contexto, 2009. verbetes - Colonização (67); Imperialismo (218);  Modernidade (297).</span></li><li><span>JUNQUEIRA, Mary Anne. Colônia de povoamento e colônia de exploração. Reflexões e questionamentos sobre um mito? In: Abreu, M.; Soihet, R.; Gontijo, R. </span><strong><span>Cultura política e leituras do passado:</span></strong><span> historiografia e ensino de História. Rio de Janeiro: Civilização Brasileira, 2007.</span></li></ol><h3><a name="leitura-2" class="md-header-anchor"></a><span>Leitura 2</span></h3><ol start='' ><li><span>BETTS, Raymon. A dominação europeia: métodos e instituições. In: BOAHEN, A. Adu (Org.). </span><strong><span>África sob dominação colonial, 1880-1935.</span></strong><span> 2. ed. rev. Brasília: UNESCO, 2010. (História Geral da África, VII).</span></li><li><span>RAMINELLI, R. Nobreza indígena da Nova Espanha: alianças e conquistas. </span><strong><em><span>Tempo</span></em></strong><span>, v. 14, n. 27, p. 68–81, 2009. </span></li></ol><h3><a name="leitura-3" class="md-header-anchor"></a><span>Leitura 3</span></h3><ol start='' ><li><span>CHATTERJEE, Partha. Quinhentos anos de medo e amor. In: </span><strong><span>Colonialismo, modernidade e política</span></strong><span>. Salvador: Edufba, 2004.</span></li><li><span>SILVA,Kalina Vanderlei; SILVA, Maciel Henrique. Etnocentrismo. In: </span><strong><span>Dicionário de conceitos históricos</span></strong><span>. São Paulo : Contexto, 2009. p.27-31</span></li><li><span>BARBOSA, Muryatan Santana. “Eurocentrismo, História e História da África”. </span><em><span>Sankofa</span></em><span>. </span><em><span>Revista de História da África e de Estudos da Diáspora Africana</span></em><span>. Nº 1 jun./2008. </span></li><li><span>SETH, Sanjay. “Sociologia histórica e teoria pós-colonial: duas estratégias para desafiar o eurocentrismo”. </span><em><span>Revista Expedições: Teoria da História &amp; Historiografia</span></em><span>. V. 7, N.1, Janeiro-Julho de 2016.</span></li></ol><h3><a name="leitura-4" class="md-header-anchor"></a><span>Leitura 4</span></h3><ol start='' ><li><span>REIS, João e SILVA, Eduardo. Capítulo 4. In: </span><strong><span>Negociação e Conflito</span></strong><span>. Resistência negra no Brasil escravista. São Paulo: Companhia das Letras, 1989.</span></li><li><span>PRICE, Richard. Introducción. In: </span><strong><span>Sociedades Cimarronas</span></strong><span>: Comunidades esclavas rebeldes en las Américas. México: Siglo Veintuno, 1981</span></li><li><span>ISAACMAN, Allen e VANSINA, Jan. Iniciativas e resistência africanas na África central, 1880-1914. In: BOAHEN, A. Adu (Org.). África sob dominação colonial, 1880-1935. 2. ed. rev. Brasília: UNESCO, 2010. (História Geral da África, VII)</span></li></ol><h3><a name="leitura-5" class="md-header-anchor"></a><span>Leitura 5</span></h3><ol start='' ><li><span>FICK, Carolyn. Para uma (re)definição de liberdade: a Revolução no Haiti e os paradigmas de Liberdade e Igualdade. </span><em><span>Estudos Afro-Asiáticos</span></em><span>, v.26, n.2, Mai-Agosto, 2004.</span></li><li><span>COOPER, Frederick. Condições Análogas à escravidão: imperialismo e ideologia da mão-de-obra livre na África. In: COOPER, Frederick; SCOTT, Rebecca J.; HOLT, Thomas C. </span><strong><span>Além da escravidão</span></strong><span>: investigações sobre raça, trabalho e cidadania em sociedades pós-emancipação. Rio de Janeiro: Civilização Brasileira, 2005.</span></li></ol><hr /><p><a href='#índice'><span>Voltar ao índice</span></a></p><h2><a name="inboxtray-contatos" class="md-header-anchor"></a>📥<span> Contatos</span></h2><ul><li><span>E-mail: </span><a href='mailto:profericbrasil@unilab.edu.br' target='_blank' class='url'>profericbrasil@unilab.edu.br</a></li><li><a href='https://twitter.com/ericbrasiln'><span>Twitter - ericbrasiln</span></a></li><li><a href='https://www.instagram.com/ericbrasiln/'><span>Instagram - ericbrasiln</span></a></li><li><a href='https://ericbrasiln.github.io/'><span>Site</span></a></li></ul><p><a href='#índice'><span>Voltar ao índice</span></a></p><p><a href='https://ericbrasiln.github.io/bhum0004/'><span>Voltar a apresentação</span></a></p></div>
 </body>
 </html>
